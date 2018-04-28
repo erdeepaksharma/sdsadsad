@@ -1,0 +1,140 @@
+/* $Id: main.css 6590 2015-12-23 00:00:00Z SocialEngineAddOns Copyright 2015-2016 BigStep Technologies Pvt. Ltd. $ */
+
+@include "~/application/modules/Core/externals/styles/admin/constants.css";
+
+/*
+MANAGE FORUMS
+*/
+.admin_siteforums_create{
+    background-image: url(~/application/modules/Siteforum/externals/images/admin/siteforum_create.png);
+}
+.admin_siteforums_createcategory{
+    background-image: url(~/application/modules/Siteforum/externals/images/admin/siteforum_createcategory.png);
+}
+
+ul.admin_siteforum_categories > li:first-child .admin_siteforum_categories_info .admin_siteforums_moveup
+{
+    display: none;
+}
+ul.admin_siteforums > li:first-child .admin_siteforums_moveup{
+    display: none;
+}
+ul.admin_siteforum_categories .admin_siteforum_categories_title li .admin_siteforums_moveup {
+    display: inline-block !important;
+}
+
+
+
+
+
+/*Manage Categories Page Css*/
+.admin_siteforum_categories {
+    overflow: hidden;
+}
+.admin_siteforum_categories > li {
+    border-width: 5px;
+    margin-bottom:10px;
+}
+.admin_siteforum_categories .admin_siteforum_categories_options {
+    overflow: hidden;
+    padding: 7px;
+    text-align: right;
+    color: #ccc;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.admin_siteforum_categories .admin_siteforum_categories_options a{
+    font-weight: bold;
+    margin: 0px 5px 0px 5px;
+}
+.admin_siteforums .admin_siteforums_title{
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: -1px;
+    display: block;
+}
+.admin_siteforums .cat_icon {
+    margin-right: 5px;
+}
+.admin_siteforums .cat_icon > img {
+		vertical-align: middle;
+}
+.admin_siteforum_categories_title .cat_icon > img {
+    height: 48px;
+    width: 48px;
+    padding: 3px 5px;
+}
+ul.admin_siteforums {
+    overflow: hidden;
+    margin: 0 20px;
+}
+.admin_siteforum_subcategories_info {
+    border-width: 2px;
+    margin: 10px 20px 20px;
+}
+ul.admin_siteforums > li{
+    overflow: hidden;
+    padding: 10px 5px;
+}
+ul.admin_siteforums > li + li{
+    border-top: 1px solid #ddd;
+}
+ul.admin_siteforums .admin_siteforums_info{
+    overflow: hidden;
+}
+ul.admin_siteforums .admin_siteforums_description{
+    display: block;
+}
+ul.admin_siteforums .admin_siteforums_moderators{
+    margin-top: 10px;
+    display: block;
+    color: #999;
+}
+ul.admin_siteforums .admin_siteforums_moderators_top{
+    display: block;
+}
+ul.admin_siteforums .admin_siteforums_moderators_top + span{
+    display: block;
+    margin-top: 3px;
+}
+ul.admin_siteforums .admin_siteforums_options{
+    float: right;
+    overflow: hidden;
+    padding-top: 5px;
+    text-align: right;
+    color: #ccc;
+}
+ul.admin_siteforums .admin_siteforums_options a{
+    font-weight: bold;
+    margin: 0px 5px 0px 5px;
+}
+
+/*ADD MODERATOR POPUP*/
+.siteforum_admin_manage_users{
+    clear: both;
+    padding: 10px 10px 0 13px;
+}
+.siteforum_admin_manage_users ul{
+    display: none;
+    margin-top: 10px;
+    clear: both;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-top: 10px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+.siteforum_admin_manage_users ul > li{
+    padding: 5px;
+}
+.siteforum_admin_manage_users ul > li + li{
+    border-top: 1px solid #ddd;
+}
+
+/*Add/Edit Forum Popup*/
+.siteforum_add_forum {
+    width:300px;
+}
+.siteforum_add_forum input[type='text'] {
+    box-sizing: border-box;
+    width: 100%;
+}

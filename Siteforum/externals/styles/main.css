@@ -1,0 +1,569 @@
+/* $Id: main.css 6590 2015-12-23 00:00:00Z SocialEngineAddOns Copyright 2015-2016 BigStep Technologies Pvt. Ltd. $ */
+
+/* ACTION TYPE ICONS */
+.feed .activity_icon_siteforum_topic_create::before {
+    content:"\\f0e5";
+}
+.item_icon_siteforum::before {
+	 content:"\\f086";
+}
+/* NOTIFICATION TYPE ICONS */
+.notification_type_siteforum_topic_response::before, 
+.notification_type_siteforum_topic_reply::before,
+.feed .activity_icon_comment_forum_post::before,
+.feed .activity_icon_siteforum_topic_reply::before {
+    content:"\\f0e5";
+}
+.notification_type_siteforum_promote,
+.feed .activity_icon_siteforum_promote {
+    position: relative;
+}
+.notification_type_siteforum_promote::before,
+.feed .activity_icon_siteforum_promote::before {
+    content:"\\f2bc";
+}
+.notification_type_siteforum_promote::after,
+.feed .activity_icon_siteforum_promote::after {
+    content:"\\f055";
+}
+.notification_type_siteforum_reputation::before {
+    content:"\\f091";
+}
+.notification_type_siteforum_thanks::before {
+    content:"\\f118";
+}
+
+
+/*Forum Categories*/
+ul.siteforum_categories .siteforum_topics > span, 
+ul.siteforum_categories .siteforum_posts > span {
+    color: $theme_font_color_light;
+}
+ul.siteforum_categories .siteforum_topics > span + span, 
+ul.siteforum_categories .siteforum_posts > span + span {
+    color: $theme_font_color_light;
+}
+ul.siteforum_categories .siteforum_lastpost > a > img {
+    border: 1px solid $theme_photo_border_color;
+}
+ul.siteforum_categories .siteforum_lastpost_date {
+    color: $theme_font_color_light;
+}
+/*Topic Icon*/
+.layout_middle .siteforum_icon_topic::before {
+    border-top: 7px solid $theme_body_background_color;
+}
+/*Forum Statistics*/
+.layout_siteforum_forum_statistics > div > div i.icon_active_user::after {
+    color: $theme_link_color_hover;
+}
+
+
+/*
+VIEW FORUM
+Styles the list of topics within a siteforum.
+*/
+ul.siteforum_topics > li, .siteforum_dashboard_post li, 
+.layout_siteforum_profile_siteforum_posts li {
+    border: 1px solid $theme_border_medium_color;
+}
+ul.siteforum_topics .siteforum_topics_replies span, 
+ul.siteforum_topics .siteforum_topics_views span {
+    color: $theme_font_color_light;
+}
+ul.siteforum_topics .siteforum_topics_replies span + span, 
+ul.siteforum_topics .siteforum_topics_views span + span {
+    color: $theme_font_color_light;
+}
+ul.siteforum_topics .siteforum_topics_lastpost_date {
+    color: $theme_font_color_light;
+}
+ul.siteforum_topics .siteforum_pagelinks {
+    color: $theme_font_color_light;
+}
+
+/*
+VIEW TOPIC
+Styles the list of posts within a topic.
+*/
+ul.siteforum_topic_posts > li + li {
+    border-top: 3px solid $theme_border_medium_color;
+}
+ul.siteforum_topic_posts > li.siteforum_nth_0 {
+    background: $theme_list_background_color_alt;
+}
+ul.siteforum_topic_posts .siteforum_topic_posts_info_photo img {
+    border: 1px solid $theme_photo_border_color;
+}
+
+/* reset some styles for siteforum posts */
+ul.siteforum_topic_posts li div.siteforum_topic_posts_info_body ol {
+    list-style-type: decimal;
+    padding-left: 1.5em;
+}
+[dir="rtl"] ul.siteforum_topic_posts li div.siteforum_topic_posts_info_body ol {
+    padding-left: 0em;
+    padding-right: 1.5em;
+}
+ul.siteforum_topic_posts li div.siteforum_topic_posts_info_body p, ul.siteforum_topic_posts li div.siteforum_topic_posts_info_body div {
+    margin: 10px;
+}
+
+/*
+POST TOPIC AND REPLY TO TOPIC FORMS
+*/
+#siteforum_post_create div.form-label {
+    float: none;
+    text-align: left;
+    margin: 0px;
+    padding: 0px 0px 5px 0px;
+}
+[dir="rtl"] #siteforum_post_create div.form-label {
+    text-align: right;
+}
+#siteforum_post_create div.form-element input[type=text], #siteforum_post_create div.form-element input[type=file] {
+    width: 300px;
+}
+#siteforum_post_create #toValues-element span > a {
+    margin-left: 3px;
+}
+[dir="rtl"] #siteforum_post_create #toValues-element span > a {
+    margin-left: 0px;
+    margin-right: 3px;
+}
+#siteforum_post_create #photo-wrapper {
+    padding-top: 10px;
+}
+#siteforum_post_create #photo-label {
+    font-size: .8em;
+    font-weight: bold;
+    padding: 2px 0px 1px 0px;
+}
+#siteforum_post_create #photo-label::before {
+    content:"\\f055";
+    font-family: FontAwesome;
+    margin-right: 6px;
+}
+[dir="rtl"] #siteforum_post_create #photo-label::before {
+    margin-right: 0px;
+    margin-left: 6px;
+}
+#siteforum_post_create #photo-element {
+    margin: 0px;
+}
+#siteforum_post_create #buttons-element {
+    margin: 0px;
+}
+#siteforum_post_create #buttons-label {
+    display: none;
+}
+/*Topic view page*/
+.siteforum_topic_options > div > #siteforum_share {
+    display: inline-block;
+}
+.siteforum_topic_options > div > #siteforum_share .siteforum_grid_footer > div {
+    background: transparent;
+    border: 0 none;
+    padding: 0;
+}
+.siteforum_topic_options > div > #siteforum_share .siteforum_share_links_toggle {
+    display: block !important;
+}
+.siteforum_topic_options > div > #siteforum_share .siteforum_share_links {
+    background-color: $theme_body_background_color;
+    border-width: 1px;
+    min-width: 200px;
+    position: absolute;
+    padding: 5px;
+}
+.siteforum_topic_options > div > #siteforum_share .siteforum_share_links li a {
+    margin: 0;
+}
+.siteforum_topic_options > div > #siteforum_share .siteforum_share_links li span::before {
+    font-family: fontawesome;
+    font-size: 16px;
+    font-weight: normal;
+    margin-right: 7px;
+}
+.siteforum_topic_view_tags {
+    background-color: rgba(0, 0, 0, 0.05);
+    clear: both;
+    display: inherit;
+    float: left;
+    overflow: hidden;
+    padding: 5px 7px;
+}
+[dir="rtl"] .siteforum_topic_view_tags {
+    float: right;
+}
+div.siteforum_topic_options .siteforum_topic_view_tags a {
+    margin: 0;
+}
+div.siteforum_topic_options .siteforum_topic_view_tags a + a {
+    margin-left: 7px;
+}
+/*
+QUICK REPLY FORM
+Styles the small reply-to-topic form visible on the
+view topic page.
+*/
+#siteforum_post_quick {
+    margin-top: 20px;
+    /*padding: 20px;*/
+}
+#siteforum_post_quick div.form-label {
+    display: none;
+}
+#siteforum_post_quick div.form-elements, #siteforum_post_edit div.form-elements {
+    margin-top: 10px;
+    padding: 0;
+}
+#siteforum_post_quick textarea {
+    min-height: 0px;
+    max-height: 4em;
+}
+/*
+EDIT POST FORM
+*/
+#siteforum_post_edit .form-label {
+    display: none;
+}
+#siteforum_post_edit #photo_delete-element {
+    margin: 15px 0px 15px 0px;
+}
+#siteforum_post_edit #photo-label {
+    width: auto;
+    display: block;
+    font-weight: normal;
+    float: none;
+    clear: both;
+    text-align: left;
+    margin-bottom: 2px;
+}
+#siteforum_post_edit #photo-element {
+    margin-bottom: 15px;
+}
+/*
+RECENT TOPICS WIDGET
+Lists the most recently created topics, typically placed
+on the main home page.
+*/
+.layout_siteforum_list_recent_topics {
+    clear: both;
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.layout_siteforum_list_recent_topics > ul {
+    +foreground;
+    +rounded;
+    padding: 5px;
+}
+.layout_siteforum_list_recent_topics > ul > li {
+    clear: both;
+    overflow: hidden;
+    padding: 3px 5px 3px 5px;
+}
+.layout_siteforum_list_recent_topics a.thumb {
+    float: left;
+    display: block;
+    width: 48px;
+}
+.layout_siteforum_list_recent_topics a.thumb > img {
+    display: block;
+}
+.layout_siteforum_list_recent_topics .info {
+    padding: 0px 0px 0px 6px;
+    overflow: hidden;
+}
+.layout_siteforum_list_recent_topics .name {
+    font-weight: bold;
+}
+.layout_siteforum_list_recent_topics .author {
+    font-size: .8em;
+    color: $theme_font_color_light;
+}
+.layout_siteforum_list_recent_topics .parent {
+    font-size: .8em;
+    color: $theme_font_color_light;
+}
+.layout_siteforum_list_recent_topics .date {
+    font-size: .8em;
+    color: $theme_font_color_light;
+}
+.layout_siteforum_list_recent_topics .description {
+    padding: 1px 0px 4px 0px;
+    font-size: .8em;
+}
+/*
+RECENT POSTS WIDGET
+Lists the most recent posts, typically placed
+on the main home page.
+*/
+.layout_siteforum_list_recent_posts {
+    clear: both;
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.layout_siteforum_list_recent_posts > ul {
+    +foreground;
+    +rounded;
+    padding: 5px;
+}
+.layout_siteforum_list_recent_posts > ul > li {
+    clear: both;
+    overflow: hidden;
+    padding: 3px 5px 3px 5px;
+}
+.layout_siteforum_list_recent_posts a.thumb {
+    float: left;
+    display: block;
+    width: 48px;
+}
+.layout_siteforum_list_recent_posts a.thumb > img {
+    display: block;
+}
+.layout_siteforum_list_recent_posts .info {
+    padding: 0px 0px 0px 6px;
+    overflow: hidden;
+}
+.layout_siteforum_list_recent_posts .author {
+    font-size: .8em;
+    color: $theme_font_color_light;
+}
+.layout_siteforum_list_recent_posts .parent {
+    font-size: .8em;
+    color: $theme_font_color_light;
+}
+.layout_siteforum_list_recent_posts .name {
+    font-weight: bold;
+}
+.layout_siteforum_list_recent_posts .date {
+    font-size: .8em;
+    color: $theme_font_color_light;
+}
+.layout_siteforum_list_recent_posts .description {
+    padding: 1px 0px 4px 0px;
+    font-size: .8em;
+}
+
+code {
+    white-space: nowrap;
+    font-family : "Courier New", Courier, monospace;
+    border: 1px solid $theme_border_medium_color;
+    background: $theme_body_background_color;
+    line-height: 20px; /*--Height of each line of code--*/
+    width: 85%;
+    overflow-Y: hidden;  /*--Hides vertical scroll created by IE--*/
+    overflow-x: auto; /*--If the Code exceeds the width, a scrolling is available--*/
+    margin: 0 0 0 40px;
+    padding: 3px;
+    display: block;
+}
+.icon_forum_thank_post {
+    margin-left: 10px;
+    height: 16px;
+}
+.siteforum_grid_footer > div {
+    background-color: $theme_body_background_color;
+}
+.siteforum_grid_footer > div {
+    border-top-width: 1px;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 12px 15px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.siteforum_grid_footer ul.dropdown-menu li {
+    padding: 7px;
+}
+.siteforum_share_links_toggle .seao_icon_share::before {
+    content: "\\f1e0";
+    margin-right: 7px;
+}
+.siteforum_share_links_toggle .seao_icon_share::before {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+/*Quick Navigation*/
+.layout_siteforum_quick_navigation {
+    display: inline-block;
+    width: 100%;
+}
+.siteforumcontent_dropdown {
+    position: relative;
+    float: left;
+}
+[dir="rtl"] .siteforumcontent_dropdown {
+    float:right;
+}
+.siteforumcontent_dropdown button,
+.siteforumcontent_dropdown button:hover {
+    border: 1px solid $theme_border_medium_color;
+    display: inline-block;
+    line-height: 16px;
+    border-radius: 2px;
+    padding: 5px;
+    min-width: 200px;
+    height: 35px;
+    background: transparent;
+    color: $theme_input_font_color !important;
+    text-align: left;
+    font-weight: normal;
+    text-shadow: none;
+}
+.siteforumcontent_dropdown_caret {
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+.siteforumcontent_dropdown_caret:after {
+    content: '\\f0d7 ';
+    font-family: FontAwesome;
+    padding: 5px 3px;
+    pointer-events: none;
+    /*position: absolute;*/
+    right: 8px;
+    top: 4px;
+    color: $theme_input_font_color;
+}
+ /*.siteforumcontent_dropdown_caret:before {
+   	content: '';
+            display: block;
+            height: 30px;
+            pointer-events: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 30px;*/
+    /*background: $theme_input_background_color;
+}*/
+.siteforum_dropdown_menu {
+    border:1px solid $theme_border_medium_color;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    background-color: $theme_pulldown_background_color;
+    max-height: 400px;
+    overflow-y: auto;
+}
+.siteforum_dropdown_menu li + li {
+    border-top:1px solid $theme_border_medium_color;
+}
+
+.siteforum_dropdown_menu li a {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 7px;
+    width: 100%;
+    text-decoration: none important;
+}
+.siteforum_dropdown_menu li.siteforum_subcate_title a,
+.siteforum_dropdown_menu li.siteforum_subcateforum_title a {
+    padding-left:15px;
+}
+.siteforum_dropdown_menu li.siteforum_cate_title a,
+.siteforum_dropdown_menu li.siteforum_subcate_title a {
+    font-weight: bold !important;
+}
+
+
+/*Quick Navigation >> Dashboard Link*/
+.siteforum_dashboard_button {
+    display: flex;
+}
+.siteforum_dashboard_button a {
+    +rounded;
+    padding: 6px 8px;
+    border: none;
+    background-color: $theme_button_background_color;
+    border: 1px solid $theme_button_border_color;
+    color: $theme_button_font_color !important;
+}
+.siteforum_dashboard_button a::before {
+    content: "\\f0e4";
+    font-family: FontAwesome;
+    font-size: 16px;
+    font-style: normal;
+    margin-right: 7px;
+}
+.siteforum_dashboard_button a:hover {
+    opacity: 0.8;
+}
+.siteforum_profile_loading_image {
+    background-image: url(~/application/modules/Seaocore/externals/images/loading.gif);
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Browse Search*/
+.siteforum-search-box .form-elements {
+    background-color: $theme_body_background_color;
+    border: 1px solid $theme_border_medium_color;
+}
+.siteforum-search-box #forum_id-wrapper {
+    border-left:1px solid $theme_border_medium_color;
+}
+html[dir="rtl"] .siteforum-search-box #forum_id-wrapper {
+    border-left:0px solid $theme_border_medium_color;
+    border-right:1px solid $theme_border_medium_color;
+}
+
+/*Pagination Ui work*/
+div.siteforum_header_pages {
+    display: inline-block;
+    margin-top: 5px;
+    overflow: hidden;
+    width: 100%;
+}
+.siteforum_header_pages .paginationControl {
+    background-color: rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    float: none;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.siteforum_header_pages .paginationControl > li {
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+}
+
+/*Bottom margin for all widgets*/
+.layout_siteforum_breadcrumb, 
+.layout_siteforum_quick_navigation, 
+.layout_siteforum_topic_view, 
+.layout_siteforum_browse_search, 
+.layout_siteforum_forum_categories, 
+.layout_siteforum_forum_topics, 
+.layout_siteforum_popular_posts, 
+.layout_siteforum_popular_topics, 
+.layout_siteforum_popular_users, 
+.layout_siteforum_tags_cloud,
+.layout_siteforum_forum_statistics {
+    +foreground;
+    margin-bottom: 15px;
+    padding:15px;
+    box-sizing:border-box;
+}
+
+/*=============================Responsive css work start form here===========================*/
+@media only screen and (max-width: 920px) { 
+    .layout_siteforum_quick_navigation {
+        display: inline-block;
+        width: 100%;
+    }
+    .layout_siteforum_quick_navigation > div {
+        margin: 3px;
+    }
+}
