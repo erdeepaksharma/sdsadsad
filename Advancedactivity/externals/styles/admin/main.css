@@ -1,0 +1,191 @@
+.global_form_aaf_homefeeds_settings {
+  width: 600px;
+}
+#global_page_core-admin-content-widget .aaf_feed_photo_blocks .form-wrapper + .form-wrapper {
+  float: left;
+  width: 150px;
+  clear: none;
+}
+
+#global_page_core-admin-content-widget .aaf_feed_photo_blocks .form-wrapper input {
+  margin: 5px 0;
+  width: 100px;
+}
+
+#global_page_core-admin-content-widget .aaf_feed_photo_blocks > fieldset >div:first-child label{
+  font-weight: bold;
+}
+#global_page_core-admin-content-widget .aaf_feed_photo_blocks > fieldset {
+  position: relative;
+  display: inline-block;
+}
+#global_page_core-admin-content-widget .aaf_feed_photo_blocks > fieldset select {
+  padding: 5px;
+}
+#global_page_core-admin-content-widget .aaf_feed_photo_blocks .form-wrapper[id*='_width_unit-wrapper'] {
+  position: absolute;
+  left: 65px;
+  width: auto;
+  bottom: 5px;
+}
+
+#global_page_core-admin-content-widget .aaf_feed_photo_blocks .form-wrapper[id*='_small_width_unit-wrapper'] {
+  left: 365px;
+}
+#global_page_advancedactivity-admin-settings-feed-settings #admin-banner-wrapper {
+  border:1px solid #ccc;
+  background-color:#f5f5f5;
+  padding:5px;
+}
+#global_page_advancedactivity-admin-settings-feed-settings #admin-banner-wrapper .admin-banner-image {
+  padding:0px;
+  margin: 4px;
+  display: inline-block;
+ border: 1px solid #dcdcdc;
+  background-position: 50% 50% !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+ }
+#global_page_advancedactivity-admin-settings-feed-settings #admin-banner-wrapper .admin-banner-image .admin-banner-image-close{
+  text-decoration:none;
+}
+#global_page_advancedactivity-admin-settings-feed-settings #admin-banner-wrapper .admin-banner-image .admin-banner-image-close {
+  background: url(~/application/modules/Advancedactivity/externals/images/admin/close-icon.png) top right no-repeat;
+  width:25px;
+  height:25px;
+  margin:4px;
+}
+#global_page_advancedactivity-admin-settings-feed-settings #admin-banner-wrapper .admin-banner-image .admin-banner-image-close:hover::before {
+  color:#000;
+  background-color:rgba(0, 0, 0, 0.1);
+}
+#advancedactivity_composer_menuoptions-element .form-options-wrapper input[type=checkbox] {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+#advancedactivity_composer_menuoptions-element ul li label {
+	border: 1px solid #dfdfdf;
+	border-radius: 2px;
+	padding: 5px 10px;
+	cursor: move;
+	background-color: #f5f5f5;
+	display: inline-block;
+	vertical-align: middle;
+	min-width: 250px;
+}
+.seaocore_admin_order_list {border: none!important;}
+/*===================AAF Admin banner preview====================*/
+/* Manage feed banner page preview CSS */
+ 
+.seaocore_admin_order_list ul.aaf-banner-preview > li {
+/*	width: 22.6%;
+	margin-bottom: 2%;
+	margin-right: 1%;
+	margin-left: 1%;
+	*/
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  margin-bottom: 15px;
+  margin-right: 1%;
+  padding: 0;
+  position: relative;
+  vertical-align: top;
+  width: 24%;
+}
+.aaf-banner-preview > li > .aaf-banner {
+	width: 100%;
+	text-align: center;
+	font-size:25px;
+	font-weight: bold;
+	padding: 40px 30px;
+	box-sizing: border-box;
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+  background-position:50% 50% !important;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+.seaocore_admin_order_list ul > li div.aaf-banner-info {
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+}
+.aaf-banner-start-date,
+.aaf-banner-end-date {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+}
+.aaf-banner-start-date > span,
+.aaf-banner-end-date > span {
+	font-weight: bold;
+	display: inline-block;
+}
+.aaf-banner-status {
+	float: right;
+}
+.aaf-banner-enable-status .aaf-banner-info {
+	border-bottom: 2px solid #4CAF50;
+}
+.aaf-banner-disable-status .aaf-banner-info {
+	border-bottom: 2px solid #ff5722;
+}
+.aaf-banner-actionlinks {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	line-height: 30px;
+	opacity: 0;
+	transition: opacity 0.3s ease-in 0s;
+}
+.aaf-banner-actionlinks > a.buttonlink {
+	margin-right: 0;
+	margin-left: 5px;
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 2px;
+	padding: 6px 6px 6px 21px;
+	background-position: center;
+}
+.aaf_banner_icon_preview {
+	background-image:url(~/application/modules/Advancedactivity/externals/images/admin/preview.png);
+}
+.aaf_banner_icon_highlight {
+	background-image:url(~/application/modules/Advancedactivity/externals/images/admin/unhighlight.png);
+}
+.aaf_banner_icon_edit {
+	background-image:url(~/application/modules/Advancedactivity/externals/images/admin/edit.png);
+}
+.aaf_banner_icon_delete {
+	background-image:url(~/application/modules/Advancedactivity/externals/images/admin/delete.png);
+}
+.aaf_banner_icon_unhighlight {
+	background-image:url(~/application/modules/Advancedactivity/externals/images/admin/highlight.png);
+} 
+.seaocore_admin_order_list ul.aaf-banner-preview > li:hover .aaf-banner-actionlinks {
+	opacity: 1;
+	transition: opacity 0.3s ease-in 0s;
+}
+
+/* Manage feed banner page preview popup CSS */
+#global_page_advancedactivity-admin-banner-index #TB_ajaxContent {
+	padding: 12px !important;
+	line-height: normal;
+	height: auto!important;
+}
+#global_page_advancedactivity-admin-banner-index #TB_ajaxContent > div > div > div {
+	background-size: cover!important;
+	background-repeat: no-repeat!important;
+}
+/* Banner Create/Edit Date Element */
+div#startdate-element > select {
+    float: left;
+}
+div#enddate-element > select {
+    float: left;
+}
+/*#type-element > select {
+    min-height: 150px !important;
+    min-width: 300px;
+}*/

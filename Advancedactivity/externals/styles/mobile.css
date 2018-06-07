@@ -1,0 +1,410 @@
+
+/* $Id: main.css 2010-11-04 9:40:21Z SocialEngineAddOns Copyright 2009-2010 BigStep Technologies Pvt. Ltd. $ */ 
+/*icons*/
+.notification_type_sitepage_tagged::before, .notification_type_sitebusiness_tagged::before, .notification_type_sitegroup_tagged::before, .notification_type_sitestore_tagged::before {
+	content:"\\f02b";
+ }
+.notification_type_reacted::before {
+  content:"\\f118";
+}
+.aaf_color_light, div#compose-container ul.tag-autosuggest > li.autocompleter-choices .autocompleter-choice div {
+ color:$theme_font_color_light;
+}
+
+.aaf_show_popup a {
+ color:$theme_link_color !important;
+}
+
+/* status box css start here*/
+.adv_post_container_box, .adv_post_container .compose-tray, .adv_post_container .adv_post_container_tagging {
+ background-color: $theme_body_background_color;
+ border:1px solid $theme_border_medium_color;
+}
+
+.birthday_activity_feed .overTxtLabel, .adv_post_container_tagged_cont, .adv_post_container_tagging .overTxtLabel {
+ color:$theme_font_color_light;
+}
+
+.aaf_feed_composer_tag {
+    display: inline-block;
+ background-color: $theme_tag_background_color;
+    margin: 0px 0 5px 0px;
+}
+
+div#compose-container ul.tag-autosuggest, ul.tag-autosuggest {
+ border:1px solid $theme_border_dark_color;
+    border-bottom-width: 2px;
+}
+
+/* facebook activity feeds start here */
+.aaf_feed_item_stats > span {
+ color:$theme_font_color_light;
+}
+
+.aaf_feed_item_stats > span > a.timesep {
+ color:$theme_font_color_light;
+}
+
+.aaf_feed_item_stats > span.colibox span {
+ color:$theme_link_color;
+}
+
+.aaf_feed_attachment_facebook_photo {
+ border:1px solid $theme_photo_border_color;
+}
+
+.aaf_feed_attachment_facebook_photo:hover {
+ border:1px solid $theme_photo_border_color_hover;
+}
+
+ul.feed .aaf_feed_attachment_facebook > div > div {
+ border-left:2px solid $theme_border_medium_color;
+}
+
+
+ul.feed .feed_item_link_desc div, ul.feed .feed_item_link_desc span {
+ color:$theme_font_color_light;
+}
+
+/* facebook activity feeds end here */
+
+/* twitter activity feed css start here */
+.aaf_tweet_options_row > span, .aaf_tweet_options_row > span.timestamp a {
+ color:$theme_font_color_light;
+}
+
+/* twitter activity feed css end here */
+
+/*activity feed for birthday start here*/
+ul.feed .feed_attachment_birthday_link .feed_item_link_title {
+ font-size:$theme_font_size;
+}
+
+ul.feed .feed_attachment_birthday_link .feed_item_link_desc {
+ color:$theme_font_color_light;
+}
+
+/*activity feed for birthday start here*/
+/*ACTIVITY MAIN TABS START HERE */
+.aaf_tabs > ul.aaf_tabs_apps {
+ border-bottom: 1px solid $theme_border_medium_color;
+}
+
+.aaf_tabs > ul.aaf_tabs_apps > li > a {
+ +rounded(5px 5px 0 0);
+ color: $theme_link_color;
+ background-color:$theme_body_background_color;
+}
+
+.aaf_tabs > ul.aaf_tabs_apps > li > a:hover {
+ background-color:$theme_border_color;
+    background-image: url(~/application/modules/Advancedactivity/externals/images/tabs-bg.png);
+ color: $theme_font_color;
+}
+
+.aaf_tabs > ul.aaf_tabs_apps > li.aaf_tab_active > a {
+ background-color:$theme_body_background_color;
+ border-color:$theme_border_medium_color;
+ color: $theme_font_color;
+}
+
+.aaf_tabs > ul.aaf_tabs_apps > li.aaf_tab_active > a:hover {
+ background-color:$theme_body_background_color;
+    background-image: none;
+ color: $theme_font_color;
+}
+
+.aaf_tabs > ul.aaf_tabs_apps > li .add_apps a {
+ color:$theme_font_color;
+}
+
+.aaf_tabs_feed {
+ background-color:$theme_border_color;
+ border-bottom:1px solid $theme_border_medium_color;
+}
+
+.aaf_tabs_feed > ul > li.aaf_tab_active a {
+ color:$theme_font_color;
+}
+
+/*ACTIVITY MAIN TABS END HERE */
+/* advanced activity feed pulldown content list start here */
+.aaf_pulldown_btn, .aaf_feed_delete_btn a, .aaf_birthday_feed_delete_btn a {
+ border:1px solid $theme_border_medium_color;
+}
+
+.aaf_feed_delete_btn a:hover, .aaf_pulldown_btn:hover, .aaf_birthday_feed_delete_btn a:hover {
+ border:1px solid $theme_pulldown_background_color_active;
+}
+
+.aaf_tabs_feed_tab_open .aaf_pulldown_btn {
+ background-color:$theme_pulldown_background_color_active;
+ border:1px solid $theme_pulldown_background_color_active;
+}
+
+.aaf_pulldown_contents_wrapper {
+ border:2px solid $theme_pulldown_border_color;
+}
+
+.aaf_pulldown_contents {
+ background-color:$theme_pulldown_contents_background_color;
+}
+
+.aaf_pulldown_contents > ul > li.aaf_custom_list, .aaf_pulldown_contents > ul > li > a {
+ color:$theme_font_color;
+}
+
+.aaf_pulldown_contents > ul > li > a:hover, .aaf_pulldown_contents > ul > li.aaf_custom_list:hover, .aaf_pulldown_contents > ul > li.active:hover {
+ background-color:$theme_pulldown_contents_list_background_color_hover;
+    outline: medium none;
+}
+
+.aaf_tabs_feed li.aaf_tabs_feed_tab_more:hover {
+ background-color:$theme_pulldown_background_color_active;
+}
+
+.aaf_tabs_feed li.aaf_tabs_feed_tab_more:hover > a {
+ color:$theme_pulldown_font_color_active;
+}
+
+.aaf_pulldown_contents > ul > li.sep {
+ border-bottom: 1px solid $theme_border_color;
+}
+
+/* advanced activity feed pulldown content list end here */
+/*welcome tab start here*/
+.adv_activity_welcome {
+ border-top:1px solid $theme_border_medium_color;
+}
+
+.adv_activity_welcome_upphoto .adv_activity_welcome_upphoto_des div {
+ color:$theme_font_color_light;
+}
+
+/*welcome tab end here*/
+/* FEED OVERRIDES */
+ul.feed .feed_attachment_album a > img, ul.feed .feed_attachment_album_photo a > img {
+ border:1px solid $theme_photo_border_color;
+}
+
+ul.feed .feed_attachment_album a > img:hover, ul.feed .feed_attachment_album_photo a > img:hover {
+ border:1px solid $theme_photo_border_color_hover;
+}
+
+.aaf_feed_tip, .aaf_feed_tip_more a, .aaf_feed_loading {
+ background-color:$theme_border_color;
+}
+
+.aaf_feed_tip_more a:hover {
+ background-color:$theme_border_medium_color;
+}
+
+/*Notification pull down*/
+.aaf_update_pulldown {
+    padding: 3px !important;
+}
+
+.aaf_update_pulldown > a {
+    float: left !important;
+    margin: 0 8px 0 0;
+}
+
+html[dir="rtl"] .aaf_update_pulldown > a {
+    float: right !important;
+    margin: 0 0 0 8px;
+}
+
+.aaf_update_pulldown > a > img {
+    width: 40px;
+    height: 40px;
+}
+
+.aaf_update_pulldown .aaf_update_pulldown_content {
+    display: table-cell;
+    vertical-align: top;
+    width: 10000px;
+}
+
+.aaf_update_pulldown .aaf_update_pulldown_content .aaf_update_pulldown_content_title {
+    margin-bottom: 5px;
+}
+
+.aaf_update_pulldown .aaf_update_pulldown_content .aaf_update_pulldown_content_stat {
+ color:$theme_font_color_light;
+    clear: both;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    float: left;
+}
+.aaf_update_pulldown .aaf_update_pulldown_content .aaf_update_pulldown_content_stat:before {
+    font-family: fontawesome;
+    margin-right: 5px;
+}
+.aaf_update_pulldown .aaf_update_pulldown_content .aaf_update_pulldown_content_stat, .aaf_update_pulldown .aaf_update_pulldown_content .aaf_update_pulldown_content_stat span {
+    font-weight: normal;
+    line-height: 16px;
+}
+
+/*privacy pulldown*/
+.aaf_privacy_pulldown_active a.aaf_privacy_pulldown_button {
+ +rounded(4px, false, false, true, true);
+ background-color: $theme_pulldown_background_color_active;
+ color: $theme_pulldown_font_color_active;
+    text-decoration: none;
+}
+
+/*style for status box*/
+.aaf_pulldown_contents > ul > li .aaf_custom_list_icon > a, .aaf_share_counts, .aaf_icon_remove, a.aaf_fb_comment_remove, .feed_item_option_add_tag, .feed_item_option_remove_tag, .aaf_tabs_feed_update_edit, .aaf_custom_list_link, .aaf_pulldown_btn_wrapper, .aaf_feed_delete_btn, #compose-music-activator, #compose-sitepagemusic-activator, #compose-sitebusinessmusic-activator, /*.adv_post_add_user,*/
+.adv_composer_tip {
+    display: none !important;
+}
+
+form.activity > div > input[type="text"], form.activity > div > textarea {
+    width: 99% !important;
+}
+
+.compose-menu {
+    margin-top: 5px;
+}
+
+#compose-submit {
+    margin-bottom: 5px;
+}
+
+.activity-post-container .buttonlink {
+    display: inline-block !important;
+    line-height: 18px;
+    margin-right: 5px;
+}
+
+.activity-post-container .compose-body {
+    margin-top: 5px;
+}
+
+.compose-menu span {
+    padding-left: 21px;
+}
+
+.compose-tray {
+    margin: 0 7px 7px;
+}
+
+.aaf_tabs_feed > ul > li.tab_item_icon_feed_all {
+    padding-left: 5px;
+}
+
+/*Composer Autosuggest*/
+.stchekin_suggest_container, .add_friend_suggest_container, ul.aaf-mobile-aad-tag-autosuggest {
+ background-color:$theme_list_background_color;
+ border: 1px solid $theme_border_color;
+}
+
+ul.aaf-mobile-aad-tag-autosuggest > li + li {
+ border: 1px solid $theme_border_color;
+}
+
+/*feeds*/
+.aaf_tabs_feed li.aaf_tabs_feed_tab_more {
+    float: right;
+}
+
+ul.feed .feed_attachment_birthday_link .feed_item_link_desc + .feed_item_link_desc {
+    display: none;
+}
+
+.layout_advancedactivity_home_feeds ul.feed > li .feed_item_body {
+    padding-right: 0px !important;
+}
+
+/*
+ACTIVITY FEED COMPOSER LINK
+These styles are used for the attachment composer above the
+main feed.
+*/
+/*#compose-link-activator, #compose-link-menu span {
+    background-image: url(~/application/modules/Advancedactivity/externals/images/link.png);
+    background-repeat: no-repeat;
+}*/
+
+#compose-link-form-input {
+    display: block;
+    margin-bottom: 7px;
+    width: 75%;
+}
+
+#compose-link-preview-images {
+    float: left;
+    overflow: hidden;
+    vertical-align: top;
+    display: block;
+}
+
+#compose-link-preview-images img {
+ border: 1px solid $theme_photo_border_color;
+    width: 100px;
+}
+
+#compose-link-preview-title {
+    margin-bottom: 4px;
+}
+
+#compose-link-preview-title a {
+    font-weight: bold;
+}
+
+#compose-link-preview-description {
+    font-size: .8em;
+}
+
+#compose-link-preview-options, #compose-link-preview-options-choose {
+    font-size: .8em;
+    margin: 8px 0px 8px 0px;
+    font-weight: bold;
+}
+
+#compose-link-preview-options-choose span {
+    padding-right: 5px;
+}
+
+#compose-link-preview-options-none {
+    font-size: .8em;
+}
+
+#compose-link-preview-options-none input[type=checkbox] {
+    display: block;
+    float: left;
+}
+
+#compose-link-preview-options-none label {
+    display: block;
+    float: left;
+}
+
+.aaf_enable {
+    display: block;
+}
+
+.aaf_disable {
+    display: none;
+}
+
+#back_to_top_feed_button {
+    display: none !important;
+}
+
+.aaf-feed-photo > img {
+    max-width: 120px !important;
+}
+
+/* Emotions box css start here */
+.seao_emoticons .adv_post_smile {
+    background-repeat: no-repeat;
+}
+
+.compose-menu {
+    display: block !important;
+}
+
+.compose-menu span {
+    padding: 0 !important;
+}

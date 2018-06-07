@@ -1,0 +1,3346 @@
+{
+  "type": "module",
+  "name": "sitereaction",
+  "version": "4.8.13",
+  "revision": null,
+  "path": "application\/modules\/Sitereaction",
+  "repository": null,
+  "date": "Fri, 20 Jan 2017 14:45:06 +0000",
+  "title": "Reactions & Stickers Plugin",
+  "description": "Reactions & Stickers Plugin",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "<a href=\"http:\/\/www.socialengineaddons.com\" style=\"text-decoration:underline;\" target=\"_blank\">SocialEngineAddOns<\/a>"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Fri, 20 Jan 2017 14:45:06 +0000",
+    "title": "Reactions & Stickers Plugin",
+    "description": "Reactions & Stickers Plugin",
+    "developer": null,
+    "authors": [
+      "<a href=\"http:\/\/www.socialengineaddons.com\" style=\"text-decoration:underline;\" target=\"_blank\">SocialEngineAddOns<\/a>"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": "application\/modules\/Sitereaction\/settings\/install.php",
+    "class": "Sitereaction_Installer",
+    "priority": 100
+  },
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Sitereaction": {
+      "type": "directory",
+      "path": "application\/modules\/Sitereaction",
+      "structure": [
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/Collection.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3397,
+          "sha1": "7a4deb57c2058d9e3693d785479da7709650c321"
+        },
+        {
+          "path": "Model\/Stickersearch.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2712,
+          "sha1": "cc8bf992071c41eb676bd159f36c67b3346ad6b0"
+        },
+        {
+          "path": "Model\/Reactionicon.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2512,
+          "sha1": "4577290ecdc98e1d61989a2ceb94957e3997b708"
+        },
+        {
+          "path": "Model\/Sticker.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3131,
+          "sha1": "2c7138168c4ec80005bd2bb8680a0319f6d96d91"
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/Stickersearch.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 654,
+          "sha1": "abf2d11ea4ce297ae74a65de80654283976722c9"
+        },
+        {
+          "path": "Model\/DbTable\/Collections.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2425,
+          "sha1": "737fe1274bb768e725f6e3a6cb9d2b7078471ca2"
+        },
+        {
+          "path": "Model\/DbTable\/Stickers.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 464,
+          "sha1": "00e5a046e3b63f4b7dfee13b1cc82f0398b34ed5"
+        },
+        {
+          "path": "Model\/DbTable\/Userscollections.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1252,
+          "sha1": "74c695d785479547b266d8ee7807fbf133b11809"
+        },
+        {
+          "path": "Model\/DbTable\/Reactionicons.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 797,
+          "sha1": "180d648b7600e1be56ac6f08edcda3aa56cc5a14"
+        },
+        {
+          "path": "Model\/DbTable\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/sitemobile",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/sitemobile\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/sitemobile\/scripts\/_reactions.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1677,
+          "sha1": "bf4791a2d042db7bf79eedaa1e346adf02a41b4f"
+        },
+        {
+          "path": "views\/sitemobile\/scripts\/_stickerCollections.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11450,
+          "sha1": "977bd10e566d5bccd30901ca1d7257d472c0f563"
+        },
+        {
+          "path": "views\/sitemobile\/scripts\/_nestedCommentReactions.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1653,
+          "sha1": "f4475066f88ea06261e361ebf726b1a0e74c8e98"
+        },
+        {
+          "path": "views\/sitemobile\/scripts\/_likeReactionsLink.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 669,
+          "sha1": "c3e10d4b079b0a0fd8046d2ccf3a294aeaa54c45"
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-collection",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-collection\/manage-search.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5326,
+          "sha1": "37490e5dff994860426071b1dfcca282acc6e830"
+        },
+        {
+          "path": "views\/scripts\/admin-collection\/delete-search.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1167,
+          "sha1": "466bf5c54e3e41f1c074ec5f5b7b1e929e9c358b"
+        },
+        {
+          "path": "views\/scripts\/admin-collection\/create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 536,
+          "sha1": "0ab0a6498328cdb7ad8468ac58313f34386a0052"
+        },
+        {
+          "path": "views\/scripts\/admin-collection\/edit-search.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 535,
+          "sha1": "4ee0a35e7888921a62f5655387fab2493ce318cc"
+        },
+        {
+          "path": "views\/scripts\/admin-collection\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1164,
+          "sha1": "850d03ed13d46a976759dac960801e12ee7f329b"
+        },
+        {
+          "path": "views\/scripts\/admin-collection\/manage.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6404,
+          "sha1": "e6d7c6fd9915813e6f6f4b996c1aacadf6bbed0f"
+        },
+        {
+          "path": "views\/scripts\/admin-collection\/add-more.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 612,
+          "sha1": "761c852fd370a38a612a4c8130098e6442d92382"
+        },
+        {
+          "path": "views\/scripts\/admin-collection\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5851,
+          "sha1": "056173e15c226661f6e43cc53abc05803e60199c"
+        },
+        {
+          "path": "views\/scripts\/admin-collection\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 536,
+          "sha1": "0ab0a6498328cdb7ad8468ac58313f34386a0052"
+        },
+        {
+          "path": "views\/scripts\/admin-collection\/create-search.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 536,
+          "sha1": "0ab0a6498328cdb7ad8468ac58313f34386a0052"
+        },
+        {
+          "path": "views\/scripts\/_formImageRainbowSearchBackground.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2210,
+          "sha1": "3cd71da5df978f45375681cefe0ec106b1e8b29c"
+        },
+        {
+          "path": "views\/scripts\/_reactions.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2104,
+          "sha1": "c1fd33180196dac79a015d9b61d110e492ea6cb9"
+        },
+        {
+          "path": "views\/scripts\/_adminNav.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1527,
+          "sha1": "c0bd276721c819dabb1f4085a2745bd30e289e77"
+        },
+        {
+          "path": "views\/scripts\/_faqHelp.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4934,
+          "sha1": "888f9b7e19659ab187295a308665fec336c7bc9e"
+        },
+        {
+          "path": "views\/scripts\/admin-faq",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-faq\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 584,
+          "sha1": "fddafaaf75cd41ace3d42195f74a06b259ef71b3"
+        },
+        {
+          "path": "views\/scripts\/admin-settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/readme.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1191,
+          "sha1": "6108966b959eda534de5b66362c00bd3cc8a4b00"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2218,
+          "sha1": "2742cbcc592778428cc93256f7cfb568e870e5b1"
+        },
+        {
+          "path": "views\/scripts\/_stickerCollections.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4815,
+          "sha1": "790ee2b992be4edbbdc200911522e0355f4b441a"
+        },
+        {
+          "path": "views\/scripts\/upload",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/upload\/upload.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11576,
+          "sha1": "a5f1f94ab0821b2f13bf13eddb0d23459e071459"
+        },
+        {
+          "path": "views\/scripts\/store",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/store\/list.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5837,
+          "sha1": "5f4917c74dfeb444d72d6ffb033f5d00e8320774"
+        },
+        {
+          "path": "views\/scripts\/store\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6332,
+          "sha1": "cbf39bd52a200f81f651e5b5a98821a3c7dd4e61"
+        },
+        {
+          "path": "views\/scripts\/_nestedCommentReactions.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3340,
+          "sha1": "697dc232ba23a23d2102f0a90c5f196dd65b9c5f"
+        },
+        {
+          "path": "views\/scripts\/_likeReactionsLink.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 957,
+          "sha1": "bc944c747d587311cc7fca11b10f4216859d7798"
+        },
+        {
+          "path": "views\/scripts\/_likeReactionsTabs.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3231,
+          "sha1": "0203e576868bef8e1a5457c223cc65bdb6639699"
+        },
+        {
+          "path": "views\/scripts\/admin-sticker",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-sticker\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1159,
+          "sha1": "28f43f3777f531c3e039575d0473bf08568ca653"
+        },
+        {
+          "path": "views\/scripts\/admin-sticker\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 403,
+          "sha1": "1b4bccb08f63495f66d15831ccef509317dc539a"
+        },
+        {
+          "path": "views\/scripts\/_iconsToolBarTip.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1945,
+          "sha1": "6c35bad14ba841d79588f21e5e432940b9399b6e"
+        },
+        {
+          "path": "views\/scripts\/admin-reaction",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-reaction\/add.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 609,
+          "sha1": "cbe3dcdc33a0468f1449a09898d99a59c98341cf"
+        },
+        {
+          "path": "views\/scripts\/admin-reaction\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1143,
+          "sha1": "ac79bfc5c5cba4fabfb69bd6b1e33eb9e2c5a506"
+        },
+        {
+          "path": "views\/scripts\/admin-reaction\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4884,
+          "sha1": "39023bf91ca0aabf302e669ab96651cf2ed0ac51"
+        },
+        {
+          "path": "views\/scripts\/admin-reaction\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 609,
+          "sha1": "cbe3dcdc33a0468f1449a09898d99a59c98341cf"
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/feeling.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0664",
+          "size": 5,
+          "sha1": "73c18e413a71220ee73cdf582d62bc34a29a8fcd"
+        },
+        {
+          "path": "views\/scripts\/index\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 85,
+          "sha1": "d4790717cf1b2112cc66add5a7185874ed105926"
+        },
+        {
+          "path": "views\/scripts\/index\/likes.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3749,
+          "sha1": "3f97285d96ae9e3e09f751879aaaf38f0c48c9f1"
+        },
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1177,
+          "sha1": "b0c841ae0be17efbe01fb26b521f3f6b64013d92"
+        },
+        {
+          "path": "Api\/Siteapi",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Siteapi\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2803,
+          "sha1": "82a488e9f5ba097305efab87f776012401face60"
+        },
+        {
+          "path": "View",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "View\/Helper",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "View\/Helper\/StickerCollections.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1924,
+          "sha1": "0296d3db96f8c11e83a9f149d6d52978eaf2e9ef"
+        },
+        {
+          "path": "View\/Helper\/ReactionsCore.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2408,
+          "sha1": "616f7880c8b6ba2498e3d5ffa7312c0bb8a5ff4b"
+        },
+        {
+          "path": "View\/Helper\/NestedCommentReactions.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2446,
+          "sha1": "87d33f3eef8f40d9471e3752aba7b51ca73c0749"
+        },
+        {
+          "path": "View\/Helper\/Reactions.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1588,
+          "sha1": "a9c355e7f478c326b32d9ad00a1a93031212de17"
+        },
+        {
+          "path": "View\/Helper\/LikeReactionsLink.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1750,
+          "sha1": "6f0d49426fb201b95abef72d6baa99820b8dfb44"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4083,
+          "sha1": "8587d8e1b6a52274f476dd612028a411f4eb7220"
+        },
+        {
+          "path": "controllers\/license",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/license\/widgetSettings.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 970,
+          "sha1": "83281f3b1e1cdf12f92fa970b634085c409fa180"
+        },
+        {
+          "path": "controllers\/license\/license3.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8497,
+          "sha1": "958bef42ab145b610d326712999766d5810d5b96"
+        },
+        {
+          "path": "controllers\/license\/license2.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 15673,
+          "sha1": "fd10753426133dfe9840d0a971a29e7aa997a780"
+        },
+        {
+          "path": "controllers\/license\/license1.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 34615,
+          "sha1": "f344eabfd7d98e24100cf085250d2f30f21ef591"
+        },
+        {
+          "path": "controllers\/license\/license.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5771,
+          "sha1": "704f534aa848be16732b4f9e609174ed56c619d4"
+        },
+        {
+          "path": "controllers\/AdminFaqController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 696,
+          "sha1": "47695e04d3804d4dec1629b0cb13f72a409f1106"
+        },
+        {
+          "path": "controllers\/AdminStickerController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3329,
+          "sha1": "c6529983637cb8398bbfe3b429115d21c9a13af5"
+        },
+        {
+          "path": "controllers\/AdminCollectionController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11519,
+          "sha1": "f13f2cbddbe2a519b76bb5e0a4207c7461146bef"
+        },
+        {
+          "path": "controllers\/StoreController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3728,
+          "sha1": "b08a9dd1b7ff007cf50cdb61c230d80cd68d51e5"
+        },
+        {
+          "path": "controllers\/AdminSettingsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6791,
+          "sha1": "83ae30c88ebe5f9b42cf728578a05f106bad3bbd"
+        },
+        {
+          "path": "controllers\/siteapi",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/siteapi\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 13145,
+          "sha1": "b2231205362911442bd6b0e5cf84a95fdd32a54b"
+        },
+        {
+          "path": "controllers\/siteapi\/StoreController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5789,
+          "sha1": "467f46325c379f83e3a84a00b6f8f021fe34beb6"
+        },
+        {
+          "path": "controllers\/AdminReactionController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 5068,
+          "sha1": "7dd80e89ed8bb4ac72b26ac23bdc8281df01b2bf"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 560,
+          "sha1": "29afcf327907492bd878496b3824f2bc5f3f2b57"
+        },
+        {
+          "path": "Plugin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2621,
+          "sha1": "9d0a47c6e950d2f1bf11daafe61a06f6a84d0394"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 147,
+          "sha1": "9f1638a8edbe1c5d28789e017fb35b2f2465f01e"
+        },
+        {
+          "path": "externals\/reactions",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/reactions\/angry.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7693,
+          "sha1": "794030f78369e31e3174b48a93707b08465cdb52"
+        },
+        {
+          "path": "externals\/reactions\/sad.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7213,
+          "sha1": "730a438214db864395eacc3460ea0102a9d3767f"
+        },
+        {
+          "path": "externals\/reactions\/like.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2209,
+          "sha1": "6adeeedc6f7ad3845038c2dc5b526963db4e170f"
+        },
+        {
+          "path": "externals\/reactions\/wow.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7451,
+          "sha1": "915276e08f70cfdb0df8de5e7783ae83256c7840"
+        },
+        {
+          "path": "externals\/reactions\/haha.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7459,
+          "sha1": "2ebf230bb04543d97fd27656713d4ab604f4710f"
+        },
+        {
+          "path": "externals\/reactions\/love.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8115,
+          "sha1": "ec7f0573544f44d7d68e24fcfcfcbf156f767a6f"
+        },
+        {
+          "path": "externals\/stickers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/derpina,_love.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 12419,
+          "sha1": "5137d02d4d50c0191de68d44076c64b035bee5ad"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/thumbs,_up_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3759,
+          "sha1": "24e3a19cd7d501b28cb1f14e0ec5a6f7a0d6db2f"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/genius.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11819,
+          "sha1": "ccb7f6e03bf9da72174e896bc18fad17948a50ce"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/ie,_troll,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 21182,
+          "sha1": "2491f100c1a712eaf91ff0a6654eaadda301e21f"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/not,_bad,_angry.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9715,
+          "sha1": "71af2fbef99433c95c0abe7ff23cabede1c7ac3e"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/troll,_dad_gestures,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14709,
+          "sha1": "6ab0f3bb5ab481d2b4e86c0720b818fe2774e20a"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/whyyyyy_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7876,
+          "sha1": "268a4d4e1582c5824c6fa3e9f345b8ab8cb12932"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/troll,_face,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 12918,
+          "sha1": "69edfff8a04fadf24fdb4862e52421201ef5936e"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/forever,_alone,_sad.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11590,
+          "sha1": "5b9106aa23463dc71a406b8d8b1c55e37698664e"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/me,_gusta,_sad,_angry.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 12433,
+          "sha1": "9a5d994005e7dc6591376d05a0764da4f3391ae6"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/wtf_gestures,_sad,_angry.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8906,
+          "sha1": "02dbd6affbfbff6d1bcc528ba26a8f1a05520c4c"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/troll,_dance,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3393,
+          "sha1": "fb0e9302a1f0b81b491a4e23e52ee7794ae08a86"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/mexican,_troll,_face,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14044,
+          "sha1": "a9739c24391c26843bc0681a0a045e8c5aca6f76"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/loooool,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 15344,
+          "sha1": "e921bf48051e822338b92667ab9b610be8c9c689"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/excited,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 13947,
+          "sha1": "6033d773e08c2755305c28d5ff89cf4fe50cafb9"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/fuuuu_gestures,_sad.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11488,
+          "sha1": "fb4b0623ce42834acea59cc84307c924f34fce86"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/no.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10003,
+          "sha1": "50387d1c36b8c8739c9df69c518943b1089cc9b2"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/are,_you,_kidding,_me,_angry.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3476,
+          "sha1": "6a3dbbe42e8fba4b57d947bee8592c9c748499d4"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/know,_what,_mean,_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10002,
+          "sha1": "fd7f04bdb3a208e6a8df0382196ccfd11e3ae41f"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/you,_dont,_say_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4741,
+          "sha1": "215f6fb69e3eb2e7d0d8f711ac88ccad47a170ab"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/poker,_face_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8233,
+          "sha1": "6df56b46f382ddb9a57993f932c851c652a51611"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/the,_rage,_face,_gestures_.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 13879,
+          "sha1": "17037455b0d699c4a9e1a0fd96655446e13ff691"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/are,_you,_idiot,_sad,_angry.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11427,
+          "sha1": "b80a840cce1ee3643bdfa572fe9332f7df628884"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/grinning_heheh,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9772,
+          "sha1": "e935786af1a28598a2a5fa74081054869209c867"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/not,_impressed,_angry.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10863,
+          "sha1": "23bceed929cde0e7daaabeccbe28c6b94f8d547f"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/troll,_face,_heheh.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 13979,
+          "sha1": "3ae31c891c1f038df49959ae9a480eaf13f5389e"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/sad,_face,_angry.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8549,
+          "sha1": "12e696f399dd0bc61c518dd2080c9cd324ea9ce0"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/monsieur_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7360,
+          "sha1": "9785c5e4b461bc29e639ae25528743ac8e10b7c7"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/cereal,_guy,_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7740,
+          "sha1": "5616fd22975a3db167083ae7b22d9359bcfbeb40"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/you,_are,_gay,_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10071,
+          "sha1": "71f99c8cb2302371a4f313b0b08434358f51a523"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/troll,_face,_kitty,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9345,
+          "sha1": "de1eb3f84923f36d27a5d4e8e0a9af5b193ccca6"
+        },
+        {
+          "path": "externals\/stickers\/Troll_Faces\/troll,_face,_hahah.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 12842,
+          "sha1": "92f04341735676eae9e780f68de48c735f081045"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/No,_sad,_notwell.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10973,
+          "sha1": "5683942fc8b268e81706626af21309573f266b5e"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Talk_to_my_hand.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 16543,
+          "sha1": "f0cbe208169d401802dda75dce506333246a3200"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Tired,_sad.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 16323,
+          "sha1": "5984de4fe67c7b338511119c4e2ac84c6e01e208"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Peace_love.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11587,
+          "sha1": "b64ac3fe1d963232bbd1d37608c06f4d60452ff1"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/You,_fool,_funny.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9915,
+          "sha1": "507af8b1e4ae3d4c0d4299e32a733ea9b5523b8d"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/GoAway,_by,_sad,_hedid.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7774,
+          "sha1": "fbc5feee181bd87c4d79989b7c72c2a732bb9385"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Hehe,_smile,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10572,
+          "sha1": "8faea3a3751381b99d2b6d269ae38a4749384e8c"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/OMGG,_sad.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10183,
+          "sha1": "0a3f4ecee6c4cd642a29a36fdaad49c7d5eeedde"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Time.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9365,
+          "sha1": "f06fee5d466d79b9b364a56226d3bfa3e1cd979e"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Heart,_love,_mylove.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8928,
+          "sha1": "bdaae101bacfa129f8d4f4a0f2b8595bea105deb"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/What,_Confused.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10314,
+          "sha1": "4cf5d8aebd64f2a7e178303c3dd2b696a68f09b8"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Hehehehe,_happy,_evil,_plan.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11505,
+          "sha1": "ff5ec92ba68afb7bfd35d4167dc91aabe3234c6a"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Nooo.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14736,
+          "sha1": "a49bd52c4b91b727d4834a69b4114d1ff2c4ff0e"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Sadd,_angry.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10956,
+          "sha1": "9e852b36ee375b19f19ec795ba356bc5a3232e55"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Awwww,_sing,_yee.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9798,
+          "sha1": "56ed54887d7d3d5abf5444a2ab29a6b317edd937"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Cryy,_sad,_tears.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10547,
+          "sha1": "0dc232cfbdea1192c6a34b0af14401dcd90107a7"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Oh,_sad,_cry.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9570,
+          "sha1": "5756399465165c3e83c39e13ffdcd881d89698f6"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Pick_phone,_angry.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14609,
+          "sha1": "109c826b7c955374edd3846590d89db5e5307e4a"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Love,_cute,_sweet.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9490,
+          "sha1": "2b9b3383ae08b1b1048d5700f8982dd789d6aaf0"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/OMG,_wow,_really.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 17032,
+          "sha1": "3d5e7a16d06db8e56d093ad7611d74c4998ebb3f"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/you,_watchingyou,_fool,_stupid.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 12719,
+          "sha1": "9315fea61cbadcbf03bb489a5c56f61c9cf807c0"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Onemin,_tired.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8458,
+          "sha1": "e6b7b57d87d914ce018c0acf047ec096c7df0db0"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Hehehh,_joke,fun.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9573,
+          "sha1": "a21e17f032141b56da2fe31a41b04bc5f6d4b943"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Nope,_no,_sad,_pain.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9521,
+          "sha1": "14745ad57832c0b887c9855ae4adb25ad4afcc59"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Ewww,_ok,_looser.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14454,
+          "sha1": "6ec1d78e43c64f11fe9d57618583d5aa9df5a38f"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Imcute,_busy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 13944,
+          "sha1": "51d7ad7cd777a98b49ac5e59e7f4828cdf9d8c90"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Yummy,_party,_celebrating,_eating.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11883,
+          "sha1": "43e75033c52c5298964d38cae5a1c2a58877d07a"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Huh,_angry.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9976,
+          "sha1": "8d997e55da41f6aa412b317cb292d35d7de5cbd9"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Oh,_no,_nope.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 17772,
+          "sha1": "f2dc63cc3d6941349aa36e2ccec6ef6570038f97"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Sad,_cry,_sleepy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9722,
+          "sha1": "d446df6d1aa11063af0e4cd6820ab71ae9610c6f"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Heheheheh,_haha,_happy,_funny.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10500,
+          "sha1": "e73d40130ea3be924899d61b6cece681baf8c813"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Ok,_by,_stop.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11556,
+          "sha1": "b0a380cfe21af0473c04080593fab1a1c60c4bcb"
+        },
+        {
+          "path": "externals\/stickers\/Funny_Mood\/Cry,_sad,_tears.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10408,
+          "sha1": "c7b7224595b7a69a7b26d1c09247a01f82f25a02"
+        },
+        {
+          "path": "externals\/stickers\/stickerInfo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1514,
+          "sha1": "3a735e6561519940a00d610d22adf4e28c8ddb4b"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Excercise,_dumbells,_health,_fit.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9773,
+          "sha1": "4ccf84315b3cee2d7512365c3bbee4c39ea9b83d"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Wow,_party,_celebrating.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 49725,
+          "sha1": "d6cff319670f451b2618f983e554fdf7927f1723"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/birthday,_fuuu,_cake,_party,_candle,_celebrating.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 43216,
+          "sha1": "d99c7e8b46b4b33fa5850b88467615d33711db95"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Call,_me,_hey,_dr.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11339,
+          "sha1": "26642ab7c8705d83ce722542a4bfb5f6654e38d9"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Tea,_fun,_freetime.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 49065,
+          "sha1": "e5c58967ca857bc6bb0d89a2a3e469ccda526c39"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Yeeee,_happy,_wow.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 49961,
+          "sha1": "e8b4185c94c6e30139103f08e80c50c59a3aa552"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Cheers,_party,_great.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 52014,
+          "sha1": "cfeb1e96f7a92cd645e06eedf3a145a5a14c75a4"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Music,_song,_singing.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 57640,
+          "sha1": "d4bf0883232cd5b52887af44885729f17d072d1d"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Cool,_heat,_sun,_great.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 58797,
+          "sha1": "76522608b6fb98c0da383dfe56ecd8c0f24fa415"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Speechless,_notalk,_donttalk.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 43671,
+          "sha1": "9d2711d44b5c65ea4c4507932e7932ece428c7c9"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Oh,_no,_naa.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14924,
+          "sha1": "50a8f36cddebd02c228e5e797d3f4bddc7ceea39"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Oh,_no,_yuk,_noway.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 53431,
+          "sha1": "b54ef6b19ac69db3d607562ff9bf15413c4d88ef"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Punch,_fight,_rebel,_enemy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10737,
+          "sha1": "37040426ecfd5a42ba14deb15048ac214ca14528"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Money,_wow,_.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 15639,
+          "sha1": "aafc2147b1b6f619bb14205e9e0217b2ac8cbe52"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Shhh,_quiet,_silent.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 55344,
+          "sha1": "8c939636239ae2d4517e87f6c3d3090cabcf4ce4"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Hi,_hey,_hola.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 38902,
+          "sha1": "e4b6e3242a9868d24184503b85836ef04fdf9517"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Huh,_hnn,_fight.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 46055,
+          "sha1": "15c090c46b46169dfa35072391cb8a469d197a67"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Oyeee,_ohh,_you.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 12462,
+          "sha1": "e4f8c8df42f89b79aa68176190c6be7e0d2b64b2"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Clapping,_wow,_congratulations,_congrars.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 46953,
+          "sha1": "979a025745bc9f61c2f68b557687608f75a170ea"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Good,_great,_lovely.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10746,
+          "sha1": "f7579285825e8f2d7cfe578679b01d06d71e417e"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Trophy,_victory,_won.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 44059,
+          "sha1": "f642a83270c7c0dfc2c4705373315f682c76dba0"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/All_the_best,_ok.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 55224,
+          "sha1": "c1d59bee1be71d52d65cf5ad8a97953684294093"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Brush,_health,_teeth.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 17697,
+          "sha1": "3107d41e9d10e27dadee7f171938458d856274cf"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Idea,_thinking,_thought.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11959,
+          "sha1": "0add1574ca47d25fe43873d70761d7c46d74406c"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Hehe,_hahah,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 70283,
+          "sha1": "f5a29927b32bb6af47a639474e213514848c74aa"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Cry,_nooo,_oh,_sad.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 56783,
+          "sha1": "2aa2b19c9429a2ff876df844a4e318c613fb426e"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Blessed,_pray,_peace,_god.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 43709,
+          "sha1": "11e7b2b932d8f97e5f12c36a56e8bf9dacbab2ba"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Victory,_won,_yeee,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 12296,
+          "sha1": "2c25186ad050796f76719be7c1ac8383b0d20867"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Pray,_blessed,_god.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 49205,
+          "sha1": "83918a3d16bcd95630ed113ca311e223cd668873"
+        },
+        {
+          "path": "externals\/stickers\/Emoticons\/Yummy,_pizza,_party,_Eating.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11367,
+          "sha1": "59148156359f099bc6160b9813c633bc9169c3a7"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Danger,_angry.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 18472,
+          "sha1": "006e60f2c26d60b20c81a0dec4afbdd5bd0203cd"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Fight.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 21779,
+          "sha1": "63b7f3ae39f21af79883774e1de2a5b5e19fce50"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/fight,_anhry.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 18182,
+          "sha1": "f2ee016ff45bb0f03c7d544ca35be83d64bb3d64"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Haha,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 23477,
+          "sha1": "8d544d267d2cdbaba1d2750be6ecea97704e3547"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Please_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14666,
+          "sha1": "5513054f462075da95e5000194d86bde5d77e3f5"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/cute,_love.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 18946,
+          "sha1": "0efbb2cb67313b85966692e28369e0c58e72e66c"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/ok_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 18020,
+          "sha1": "ab21637b9ed684364359b7bb03154b419ca44e0c"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/punch,_fight.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 23837,
+          "sha1": "01d8d59cd2e13b8e58489a3dd3b304d17e219735"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Thanks_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 21444,
+          "sha1": "2497bd95ebb91fb397c513db6cd88911054e6809"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 18886,
+          "sha1": "afb5a0e1699ef244af8b41e576655468e18f8e93"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Ouch,_sad_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 22264,
+          "sha1": "630634533be23ced588857c2be15a5899b046dd3"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Love.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 22509,
+          "sha1": "10e92872d156e1109390b4c8c8484947a26e60be"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/yummy,_Party,_eating.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 26085,
+          "sha1": "56fbae41234e5ccf8811cf702bc30c6eb3259fdf"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/How's_That_yee.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 20379,
+          "sha1": "5dcaa4edc2db8d9b93a743f210f8b21c5050ab1e"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Awesome,_wow,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 17994,
+          "sha1": "802c320f0c3d31de8b112bdaec9bca1ad9ee4dfe"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Hmmm,_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 21947,
+          "sha1": "e1e13accb5fafbef93f0966716551dca709f11fd"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/fights,_angry.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 19614,
+          "sha1": "206cea087ed4cbb4741d29fc8f040653ee3c7de2"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/hey,_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 21226,
+          "sha1": "1a9f66e29297b32c088ab20bdccd7999db2b512c"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Fun,_party.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 20261,
+          "sha1": "447ccc92e4e773e45e9cdc11effcaba3c29a2698"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/great,_happy,_fun.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 22796,
+          "sha1": "bfcd1c976358988d3ca4b6a44bc5accfdd10145b"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Happy,_hehe.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 21627,
+          "sha1": "32ca27b3863325bc2a0aea3837ea25872d408d60"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/hello,_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 20633,
+          "sha1": "a4450464d333a88adbb074cb1b1d583a341fad0f"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Nope,_no.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 15399,
+          "sha1": "391356a0569b670890d2c031d09fc60e76c9a0f4"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Welcome_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 20751,
+          "sha1": "a44f878bf203ca21199cb92d7fa1a0e2ced1f63d"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/No_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 19957,
+          "sha1": "154b3a224160dec7d4bc692f9f218cc0919f601c"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/fine,_ok,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 20185,
+          "sha1": "445f3259d641833992ddd5f975f2f38e8c3b671c"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/wait_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 19420,
+          "sha1": "d3e003822507dff8191c0a9939614e3ac0ce9c62"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Happy,_Nice.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 22900,
+          "sha1": "fc3cdc751c00526b7d9cc81000df541133520f3b"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Rebel,_Fight.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 22172,
+          "sha1": "3accae94769231e3319fab4dbddebfc5d7f96c09"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Go,_yeee,_fun.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 19340,
+          "sha1": "f0ddffad57491b6439a370211d33e8aabc674aeb"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/what'sup_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 21250,
+          "sha1": "e5ab9c7f84f0efcbe2c3b8c7028bf6cd6d31a093"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/fun,_party.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 21382,
+          "sha1": "bf99950ee6424cf31063ce313f8b9819b937fc72"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/ready,_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 16486,
+          "sha1": "2903122a45f510b1283d0fd9cbfe1d23a17a8486"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/peace_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 25266,
+          "sha1": "29b677a421623977e488223e6d4c17cfa2c18669"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Good_Luck,_party.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 16257,
+          "sha1": "7f787b4ec086edccadd2666dde61c5f053298c41"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/oops_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 22712,
+          "sha1": "c7aa1cbb4a727ec1444aa43f84802c6614244be5"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Yes_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 21792,
+          "sha1": "4b113b25e7148952bff0e54f4d42ed8f3077e544"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/food.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 22035,
+          "sha1": "0f4bbe268b8f406f38975a59ab0c175bd94dfc65"
+        },
+        {
+          "path": "externals\/stickers\/Kunfu_Panda\/Angry_grr,_sad,_enemy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 21712,
+          "sha1": "3f458a4a2c2d16cb978ae5552cc4619a1274d77e"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Idea,_means,_thinking.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 32722,
+          "sha1": "c64bf8693b721906d424a7e0ea5b767bd7c3db56"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Hnn,_what,_means.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 29501,
+          "sha1": "a8dc0c0e3f45bc70bbf1f7c3ae469a9ada5416e0"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Santa,_christmas,xmas.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 35286,
+          "sha1": "e4f598a053f825d0f96a3308b73efb822cb1b5be"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Woww,_cute,_wow,_lovingit.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 30775,
+          "sha1": "d7809e31746bc802cfc4b12b1074223a7dea9d95"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Please,_come,_yee,_comin.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 44637,
+          "sha1": "9c1d144db959f68244e9318107c125cae45dc1cc"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Olalal,_dance,_yeee.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 34348,
+          "sha1": "cc177c0e2cf0e069c8a4b3bc70764a984fd24c90"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Oh,_no,_plz,_please",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 18159,
+          "sha1": "cf44406deb15270a80c09b17bde02be167bc90c6"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/OMG,_problem,_oh,_uhh.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 28625,
+          "sha1": "0454706f1abedc7ff0c9bc6a40a1d379ade54a17"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Party,_fun,_wow.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 55922,
+          "sha1": "1a4c58e9a53cf87c72281912954083c39077bc4a"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Love,_lov,_romantic.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 35138,
+          "sha1": "e6264801d11a36fe7aa8a95011b3964923fbad66"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Yuhoo,_fun,_yuhoo.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 31934,
+          "sha1": "0ced0790a113a8350053a9f940f67607776aa8ec"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/No_please,_plz,_sad.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 25044,
+          "sha1": "69fe9a38c05c4363607f5820ac46e137880fa784"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Really,_oh,_ok,_seriously.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 30054,
+          "sha1": "c7bb23f6209dff1ef0e8850be792ff38976bd4b7"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Fun,_play,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 17228,
+          "sha1": "065d63dd0f0a5184cf0bcfd6be0eeabd1df2cb00"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Zzzz,_sleep,_tired,bed.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 29971,
+          "sha1": "a42db918596ba19d351b0efb21e56103d669efbf"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Welcome,_hi,_holla,_hey.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 19921,
+          "sha1": "e51a6032ce1cd46699a21249749ade3f12afaf59"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Pray,_pray,_ok.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 23526,
+          "sha1": "7ddef3a23eb59a8076345cf01bfd9d1f4706d189"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Byy,_bii,_sad.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 24063,
+          "sha1": "79242ba8eb89827e1fb2d6eed2b634006c23f554"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Sing,_music,_song.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 25906,
+          "sha1": "13dc9de820439b8320edbe21500d2440bd5f845a"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/lol_funny,_fun,_hahah,_heheh.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 30337,
+          "sha1": "d5ce7ba25d773ccd489aa5b60ea5c1fe80249aff"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Hi,_hey,_holla,_hii.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 23633,
+          "sha1": "e171ccbb127b9ab40f41afc7574bc087f0047069"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Cool,_wow,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 36735,
+          "sha1": "e39402e74e96332c670713274ab61042b277a7d1"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Fun_time,_yee,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 72971,
+          "sha1": "3234c56b23b27bc1636531849394cdef0ced410a"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Coool,_enjoy,_njy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 47233,
+          "sha1": "2f7ac888fce7572f128bcf36ed2906bf3d80bd6e"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Hehehhe,_fear,_afraid.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 26269,
+          "sha1": "52f6df95bac519a97814d33e7fa1ce71f60528a5"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/What,_hey,_there,_dr.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 31574,
+          "sha1": "b134d32d382c4a4289c2ddc395e23c3ff555a70d"
+        },
+        {
+          "path": "externals\/stickers\/Disney_Olaf\/Yeeee,_crazy,_fun.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 45090,
+          "sha1": "bb6f83c5cf1281c1b640f2bb490a069012798ab9"
+        },
+        {
+          "path": "externals\/stickers\/Garfield",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Hi,_holla,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 13208,
+          "sha1": "8847507bc0c0c78d331e8516f352389dce738019"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Uh_Oh,_angry.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 13390,
+          "sha1": "83c27b3109b01057ec771922785b837578c993fa"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Yum,_Eating.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14899,
+          "sha1": "6f5a75a5dd38c92e58664563f4f219dbeed798eb"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Give_me.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 17668,
+          "sha1": "25a88f00887a1efb22cf0971fcf31338d459a39a"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/No_Way,_sad.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14502,
+          "sha1": "d8f915995113e82d5930aea59afe2e74520f49b5"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Uff,_angry.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 12950,
+          "sha1": "b5c029eb7b87fb3972d7ad99a1e407bfa0b574e3"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Snack,_party.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14358,
+          "sha1": "6429a459f39b86770238962c7f6f7dc487fc3a0b"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Yay,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 17209,
+          "sha1": "de507140604d49a69e6c912906cddb246bd0e9f7"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Cold,_sad,_lonely.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 18487,
+          "sha1": "a0e58b53bb031965bfacba8d00091b75e5049a88"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Angry,_Grrr,_sad.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 15174,
+          "sha1": "fda4b7c65d82af9d7a185942a83ed2ed80d75432"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Yeeee,_party.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 16264,
+          "sha1": "4098ecb48ea591ab3ff0a957e5d425a5dbd7e0dc"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Sorry,_Sad.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 12811,
+          "sha1": "8b56cedc06df0c88eb2880f86e977ae4e791727b"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Love.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14053,
+          "sha1": "f5b03873332c7f1be0c37ac1fe417b918013496f"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Really.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11299,
+          "sha1": "636686f2cda69244ec5edd3edb7aba23c2ac70af"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Lov_you_u,_love.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 15206,
+          "sha1": "b8caf29b530df605d85cfc25450d19bb3eef2a06"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Knock,_celebrating,_party.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10994,
+          "sha1": "7b05c8f74a662b0d47dba34c7db2c5152ab5df51"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/OMW.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 20376,
+          "sha1": "dbcd11ca0af38d8c7cac69d4a1e3df1d2d3af842"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Huh,_sad.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11976,
+          "sha1": "9160ce1554acffd7cb6be6d701d1243dee8dc679"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Angry,_fight.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 15994,
+          "sha1": "c281a3ef0eb55c7bfd3cc7c3a36a38328c33bf5d"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Zzzz,_sleepy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 15095,
+          "sha1": "db5fe17d63f4727efe84e851af52a044f6f73bcc"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Confused.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14003,
+          "sha1": "6bf510627a5148b684f47880dbfbe30d7bc9f50c"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/EEeeee.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 12652,
+          "sha1": "0c43ff3d3b133d605cb23e188ae70d0513a55f32"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Rain,_sad.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 17065,
+          "sha1": "559e14af3b9c84812232fa3906e7885ee660f68d"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Surprise,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 12462,
+          "sha1": "f967a76d3955d198818a872db84d825fcf6c5ef9"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Best_Friends,_BFFs,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 18114,
+          "sha1": "b055ac8fd3948970b6e42cd953162a4e69e73bde"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/You_are_cute,_love,_sweet.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 15070,
+          "sha1": "8c3c97d06c5015ba1d34873537f39074f83d8fa5"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Cool,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14271,
+          "sha1": "52a2cc458bac13ffe3d64541c65c326444b9c232"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Yeee.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 12289,
+          "sha1": "6f862a85b31eaab078d6b2d4b687864d0fc9ab68"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/OMG.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14626,
+          "sha1": "e7a0e9cba25880b06d883c308b4341a3ada4b763"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Thanks.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 12776,
+          "sha1": "dbf64d8b96e57e77b04c3b63ab777b055849ecf3"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Ok.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14251,
+          "sha1": "4859129f96fe8e41b80d251e27d050eda636563d"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Best_Friends,_BFF,_Friend.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 21648,
+          "sha1": "17a5f913ae3749c3374babaf6b80535e7c87de26"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Hug,_friend.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14153,
+          "sha1": "c148096c2595499646ab99b078692c38d8a42dff"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Oh,_sleepy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 14430,
+          "sha1": "596335e617fe81e31e79b6ea125acb9ee3a8efbb"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Dog,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9474,
+          "sha1": "07254242c07be406cb0ac1b50185b98d6b7a0e17"
+        },
+        {
+          "path": "externals\/stickers\/Garfield\/Music,_party.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 12288,
+          "sha1": "dd7cff2a0041c723ec1c9649b77ea17c61eea6ec"
+        },
+        {
+          "path": "externals\/stickers\/Minions",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/stickers\/Minions\/Hii_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 70688,
+          "sha1": "d22df823054e90c69e59cdba4c2cded0f25958aa"
+        },
+        {
+          "path": "externals\/stickers\/Minions\/Really_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 57077,
+          "sha1": "52f625e61bc00f6d88436ed5cb5d99fcc91bf315"
+        },
+        {
+          "path": "externals\/stickers\/Minions\/aaahh,_sad_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 49241,
+          "sha1": "8e0112d24b5164a5cc01faa12fe5c0f350a28e65"
+        },
+        {
+          "path": "externals\/stickers\/Minions\/Fight,_angry.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 51469,
+          "sha1": "d909d21fa6f15fbd3b5c09f39404e19affd84460"
+        },
+        {
+          "path": "externals\/stickers\/Minions\/Noted,_Working.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 54638,
+          "sha1": "89fc436f3e812ca40246d778a260eb776659b77c"
+        },
+        {
+          "path": "externals\/stickers\/Minions\/OMG_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 56762,
+          "sha1": "d83d03975b6dfdc8caf04fba582cdfb633ab9def"
+        },
+        {
+          "path": "externals\/stickers\/Minions\/Announcement,_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 59378,
+          "sha1": "c59e9f5ef306b825b20d20ae92bac9093d48aaf6"
+        },
+        {
+          "path": "externals\/stickers\/Minions\/Hey_Baby,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 61862,
+          "sha1": "8d68fbb3b31715ffcf5a62fb4596c236236d5cf7"
+        },
+        {
+          "path": "externals\/stickers\/Minions\/My,_Love.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 69907,
+          "sha1": "b162f9269a9670ecfee47cccd294b43436bf3e4f"
+        },
+        {
+          "path": "externals\/stickers\/Minions\/Thinking,_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 51695,
+          "sha1": "49b74e3f3a571ae2cf2cfd4e03748faec91d5658"
+        },
+        {
+          "path": "externals\/stickers\/Minions\/Dance,_happy,-smile.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 46288,
+          "sha1": "38b12e5a079de601c7222f8cb3294a353bca575f"
+        },
+        {
+          "path": "externals\/stickers\/Minions\/Oooo,_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 58645,
+          "sha1": "084949b3d1c4f1647c825b389e39280575f27c89"
+        },
+        {
+          "path": "externals\/stickers\/Minions\/Hello_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 56418,
+          "sha1": "87530436fc69ba6062de6ca7f48464561ac65446"
+        },
+        {
+          "path": "externals\/stickers\/Minions\/Yeee,_happy,_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 51376,
+          "sha1": "006e8e0dd61d29c058fa78665c2b95a9ad998ff8"
+        },
+        {
+          "path": "externals\/stickers\/Minions\/Seriously_gestures.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 54554,
+          "sha1": "78a9834e73f3612274400a189e36ff04366d21bd"
+        },
+        {
+          "path": "externals\/stickers\/Minions\/Wow_gestures,_happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 47397,
+          "sha1": "fe6d8ad71f7b9a5f75845aa08daaf0185c78450f"
+        },
+        {
+          "path": "externals\/stickers\/Minions\/Small_Girl,_happy,_love.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 59665,
+          "sha1": "5a78bab516cb3f05ea76ba85cc0d759c33d0f1bd"
+        },
+        {
+          "path": "externals\/stickers\/Hearts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/lock.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 32908,
+          "sha1": "be4a64a741aa978422581fafcbf86eed08ab057d"
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/fire.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 27430,
+          "sha1": "3c49c8c74bf224da0e03000ebef756e7482fe962"
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/Fire_Ballon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 31033,
+          "sha1": "c260d5145ac6b2c99b9fd7ab2bb98f93b34f6d97"
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/candle,_heart.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 35879,
+          "sha1": "f1ff6c20f4e2f1bd27937efa2d98133f9050c972"
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/heart_broken.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 32107,
+          "sha1": "b74be658c478bded4e372cda599b9cbd8fb17f49"
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/Sending_Love.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 32325,
+          "sha1": "d66c63e1e898b4a5479a6a09371829153cf458c2"
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/angel.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 23963,
+          "sha1": "cec9f4cc5b0f370dd1592758ef1e271be32f362c"
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/stitch_heart.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 41542,
+          "sha1": "2ae52ddcda069cd4c937d418dd2142da025ff611"
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/gift.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 18215,
+          "sha1": "d569a6c5683f754b92b1bbf98f9003cf4f98f3a7"
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/arrow_hearts.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 30305,
+          "sha1": "c54259841cbd42c2c4d7f0152c8c87cb9df3a562"
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/Injuries.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 36129,
+          "sha1": "562c812edfefca5ef9290ade3f90e74f7ff3a6a6"
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/heart.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 34311,
+          "sha1": "3b3bf7535eb89a8d821edf59fbdb639a4180e423"
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/devil.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 29496,
+          "sha1": "f24efea092fc65e814738000740f55042c8a2905"
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/Injury.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 40421,
+          "sha1": "356f4403d31858f91055582968216c95ab3a2570"
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/love_email.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 22127,
+          "sha1": "6808a6fcef3b2f07c883c39708db5cda146c854a"
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/ballon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 25179,
+          "sha1": "19039f484012957fac7c95d6d981644a54888f6f"
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/shot.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 37929,
+          "sha1": "f5225ab661d2855d6be01492b5023aaae66ebdbb"
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/hearts.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 37960,
+          "sha1": "7453cf0d789e4e8262ef913b252db4c78b41c66a"
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/arrow_heart.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 29334,
+          "sha1": "066ff0af83ec79106b6759c6f4bf5239d2b8777a"
+        },
+        {
+          "path": "externals\/stickers\/Hearts\/ballons_hearts.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 29875,
+          "sha1": "a9d39904134abe605e08d2e392e69548e5482a5a"
+        },
+        {
+          "path": "externals\/search_icons",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/search_icons\/angry.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 17482,
+          "sha1": "4a94da6475607e8db71a2ae95f46dd1528e00138"
+        },
+        {
+          "path": "externals\/search_icons\/sad.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 17249,
+          "sha1": "037a605058565cdd9bc1298028a5062fc1d26d35"
+        },
+        {
+          "path": "externals\/search_icons\/eating.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 17560,
+          "sha1": "30367b85afd69d8bf0fb2effbad3a572d7d966c6"
+        },
+        {
+          "path": "externals\/search_icons\/sleepy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 16958,
+          "sha1": "5a473098d0c5e21465a36d32db14d2242f1a7074"
+        },
+        {
+          "path": "externals\/search_icons\/happy.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3873,
+          "sha1": "9c022da3ffa257e0657b207f4147c08956fd89b0"
+        },
+        {
+          "path": "externals\/search_icons\/active.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 17658,
+          "sha1": "2ef165b94f22eee950bad221be4f15cb9f9e7f56"
+        },
+        {
+          "path": "externals\/search_icons\/working.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 17654,
+          "sha1": "498c06fcd97741c314a410d040ae519cf9f5afc6"
+        },
+        {
+          "path": "externals\/search_icons\/confused.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3087,
+          "sha1": "02451a1c6895e5b8bf796da06cf54ef03d9c7718"
+        },
+        {
+          "path": "externals\/search_icons\/celebrating.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4012,
+          "sha1": "bd2a89883f304334f4ce8d7a28b3d7e712de6fa4"
+        },
+        {
+          "path": "externals\/search_icons\/love.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2698,
+          "sha1": "1b1b5214b3d12378eb3d7b52675f1c785c17c87d"
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/core.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2343,
+          "sha1": "fdd07a07867c379dd2652a11d6112d274008febc"
+        },
+        {
+          "path": "externals\/scripts\/composer_nested_comment_sticker.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 10538,
+          "sha1": "ac5947287d7b1c2fab8c0394eb79023c8e306524"
+        },
+        {
+          "path": "externals\/scripts\/composer_nested_comment_activity_sticker.js",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 11365,
+          "sha1": "ef4bebf0e803bfb2c0461072eaf608b2147f1fc9"
+        },
+        {
+          "path": "externals\/scripts\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 19954,
+          "sha1": "bee599ebe28d5905754503d04b25f88613bfac31"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/icons",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/icons\/sticker-add-hover.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1262,
+          "sha1": "12d8577c73283da3b5e78a2b8fbde6838f469960"
+        },
+        {
+          "path": "externals\/images\/icons\/sticker-add.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1262,
+          "sha1": "c8d7497454bf6db89dbe41546f0dd1815e456f45"
+        },
+        {
+          "path": "externals\/images\/like.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1080,
+          "sha1": "74c72143edf0db7f81e2fa599224223d5570d694"
+        },
+        {
+          "path": "externals\/images\/search.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1217,
+          "sha1": "b793ef4e20ad12a564e0ed81c1c058e01df237f2"
+        },
+        {
+          "path": "externals\/images\/not-found.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3712,
+          "sha1": "51543a947219cb554d6e6a69231139ef84a23690"
+        },
+        {
+          "path": "externals\/images\/arrow-bottom.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1024,
+          "sha1": "ac03503439d2d9d81fb55c4327c8aa1a2c400cd0"
+        },
+        {
+          "path": "externals\/images\/backlink-icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1184,
+          "sha1": "7c6954883e456dffc8c8ba1d89c2f38d8c76f1bf"
+        },
+        {
+          "path": "externals\/images\/arrow-top.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1019,
+          "sha1": "9adfcd50d1c38e8e5984ee2f7224957688f7384c"
+        },
+        {
+          "path": "externals\/images\/banner.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 144201,
+          "sha1": "8bf79cb77cb30223ce15078b006e59678e2b785f"
+        },
+        {
+          "path": "externals\/images\/admin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/admin\/delete.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1300,
+          "sha1": "6fbf8d8141c3af66e18ee2d4a87d1486cb6355fc"
+        },
+        {
+          "path": "externals\/images\/admin\/screenshots",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/admin\/screenshots\/enable_reactions.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 58348,
+          "sha1": "bb7eb970357f98db88d6343b019e2a276e625d01"
+        },
+        {
+          "path": "externals\/images\/admin\/screenshots\/reaction_icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 51035,
+          "sha1": "323cf4664ee61122977e5a7c052882f1fdb2f0b0"
+        },
+        {
+          "path": "externals\/images\/admin\/screenshots\/enable_stickers.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 170059,
+          "sha1": "7cf1f6e34bb20bac1a8c620641a7ae2d78b41955"
+        },
+        {
+          "path": "externals\/images\/sticker-store-icon.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1612,
+          "sha1": "6d8e03ead7497de14db92d3e730e6e4460d327ee"
+        },
+        {
+          "path": "externals\/images\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/images\/add-stickers.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1043,
+          "sha1": "a4051337435b2650adcc836ae444b0c77e849e65"
+        },
+        {
+          "path": "externals\/images\/prev.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1067,
+          "sha1": "efe6d6fce5f35c43310ae6517039d495dca7e7d3"
+        },
+        {
+          "path": "externals\/images\/close.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 995,
+          "sha1": "483f75e3252b40f08b91a8bc4bc027e9da4207c9"
+        },
+        {
+          "path": "externals\/images\/next.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1068,
+          "sha1": "81f0d3b062ac67de14a41e0674feb38aeaba77d9"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 761,
+          "sha1": "1378485b9e10d902b5834f566c46dcd0d8ed76fe"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2296,
+          "sha1": "7833b1885924a465690eb4ff665a7717741af4df"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 6370,
+          "sha1": "6519e16c1295db8bcfd6022cf8cb13ec76fb4edf"
+        },
+        {
+          "path": "settings\/install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1225,
+          "sha1": "cb4d2c126183be1d78c6749307668a32dfce1aab"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Reaction",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Reaction\/Create.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2158,
+          "sha1": "e61127cb7d0a13e9081d5c501b917cb7370cbda9"
+        },
+        {
+          "path": "Form\/Admin\/Collection",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Collection\/Edit.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1038,
+          "sha1": "f45b37f636fb2846e8b483b46aaa82939aa4d6c5"
+        },
+        {
+          "path": "Form\/Admin\/Collection\/Create.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4172,
+          "sha1": "79ca175d5d5d182d058adfc22990c03f731bdf99"
+        },
+        {
+          "path": "Form\/Admin\/Collection\/Sticker",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Collection\/Sticker\/Edit.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1375,
+          "sha1": "f096c39a127218fe415ac365d186040952ef73fa"
+        },
+        {
+          "path": "Form\/Admin\/Collection\/Sticker\/Add.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1257,
+          "sha1": "8d9f0da8f9f313cf07072687631eedbbe10f6da7"
+        },
+        {
+          "path": "Form\/Admin\/Collection\/Search",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Collection\/Search\/Edit.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 825,
+          "sha1": "03f8e960507abe35ddb74b3be4aee7f6cba7c692"
+        },
+        {
+          "path": "Form\/Admin\/Collection\/Search\/Create.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2457,
+          "sha1": "9bef7169bb5fa5830950bcde251b272a46d47744"
+        },
+        {
+          "path": "Form\/Admin\/Settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Settings\/Global.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3194,
+          "sha1": "cf2fbd398f2b7189dd49c151f3a76aacf790de79"
+        },
+        {
+          "path": "Form\/Decorator",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Decorator\/FormFancyUpload.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 852,
+          "sha1": "20e029fd510d9d466c5a3b4584307271ecfffb13"
+        },
+        {
+          "path": "Form\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        }
+      ]
+    },
+    "application\/languages\/en\/sitereaction.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/sitereaction.csv",
+      "structure": {
+        "path": "sitereaction.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0777",
+        "size": 1175,
+        "sha1": "6c5e5669d8fdd5342ff3524412e69e25356a97f5"
+      }
+    }
+  }
+}

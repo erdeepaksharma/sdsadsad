@@ -1,0 +1,171 @@
+/* $Id: mobile_statusbar.css 2010-11-04 9:40:21Z SocialEngineAddOns Copyright 2009-2010 BigStep Technologies Pvt. Ltd. $ */
+.aaf_enable {
+  display: block;
+}
+.aaf_disable {
+  display: none;
+}
+#compose-addfriendtag-activator{
+  background-image:url(../images/icon/user-add.png);
+	background-position:left 2px;
+}
+#compose-checkin-activator{
+  background-image:url(../images/icon/map-add.png);
+	background-position:left 2px;
+}
+#compose-photo-activator, #compose-link-activator, #compose-music-activator, #compose-video-activator{
+/*	background-position:left 2px !important;*/
+}
+form.activity .buttonlink{
+	line-height:normal;
+}
+.activity-post-container .aaf_st_enable {
+	display: inline-block !important;
+}
+.layout_advancedactivity_home_feeds form textarea{
+  width:99% !important;
+  padding:2px !important;
+	line-height: 18px;
+}
+.compose-menu button#compose-submit{
+  float:none;
+}
+.aaf_cm_sep{
+ display:inline;
+}
+ul.aaf-mobile-aad-tag-autosuggest > li {
+  overflow: hidden;
+  padding: 3px;
+}
+.aaf-add-friend-close{
+  margin-left:10px;
+}
+.aaf_autosuggest_pagination{
+	float:right;
+	margin:10px;
+}
+.aaf-add-friend-tagcontainer{
+  padding: 4px;
+	overflow:hidden;
+}
+.aff-tag-with{
+  padding:5px;
+}
+.aaf-add-friend-tagcontainer .tag{
+	float:none;
+}
+.compose-menu select {
+  width: auto;
+}
+/*Composer Autosuggest*/
+.stchekin_suggest_container,
+.add_friend_suggest_container{
+  padding: 5px;
+  position: absolute;
+  z-index: 100;
+	width:80% !important;
+}
+.stchekin_suggest_container input[type="text"],
+.add_friend_suggest_container input[type="text"] {
+  width: 95%
+}
+ul.aaf-mobile-aad-tag-autosuggest {
+  cursor: pointer;
+  list-style: none outside none;
+  margin-top: 5px; 
+  white-space: nowrap;
+  width: 99%;
+}
+ul.aaf-mobile-aad-tag-autosuggest > li.autocompleter-choices .autocompleter-choice {
+  line-height: 20px;
+}
+ul.aaf-mobile-aad-tag-autosuggest > li.autocompleter-choices {
+  font-size: 0.8em;
+}
+.stchekin_suggest_container p.label,
+.add_friend_suggest_container p.label{
+	margin-bottom:5px;
+}
+.add_friend_suggest_container_loading{
+	text-align:center;
+}
+/* Emotions box css start here */
+.compose-menu_before > .adv_post_smile{
+  background-image: url(../images/icon/smile-add.png);
+  background-position:bottom;
+  float: right;
+  height: 18px;
+  margin: 5px 5px 0 0 !important;
+  padding: 0 !important;
+  position: relative;
+  width: 18px;
+}
+.seaocore_embox{
+  background-color: #333333;
+  border: 1px solid #828282;
+  padding: 2px !important;
+  position: absolute;
+  right: -6px;
+  top: 25px;
+  width: 192px;
+  z-index: 99;
+}
+.seaocore_embox span{
+  padding:0px !important;
+}
+.seaocore_embox > .seaocore_embox_arrow{
+  display: block;
+  right: 8px;
+  margin-top: -15px;
+  position: absolute;
+}
+.seaocore_embox > .seaocore_embox_title{
+  border-bottom: 1px solid #828282;
+  color: #FFFFFF;
+  float: left;
+  font-size: 11px;
+  height: 13px;
+  line-height: 13px;
+  margin:0 2px;
+  margin-bottom: 2px;
+  overflow: hidden;
+  padding: 3px 0 !important;
+  width: 186px;
+}
+.seaocore_embox > span.seaocore_embox_icon{
+  margin: 2px;
+  float:left;
+  height:20px;
+  width:20px;
+}
+.seaocore_embox > span.seaocore_embox_icon:hover{
+  border: 1px solid #828282;
+  margin:1px;
+}
+.seaocore_embox > span.seaocore_embox_icon img{
+  float:left;
+}
+.seaocore_embox_open {
+  display:block;
+}
+.seaocore_embox_closed {
+  display:none;
+}
+.emoticons_active p{
+  display:none !important;
+}
+.emotions_use{
+  vertical-align:middle;
+}
+/* Emotions box css end here */
+
+/*Responsive work*/
+@media only screen and (max-width: 600px){
+	div.compose-menu a.compose-activator {line-height:18px;}
+	.compose-menu{margin-top:5px;}
+	.compose-menu_before > .adv_post_smile{margin-top:-26px !important;}
+	.compose-menu button#compose-submit{width:49% !important;}
+	.compose-menu select{width:49% !important; float:right; padding-top:7px; padding-bottom:6px;}
+	.stchekin_suggest_container input[type="text"],
+	.add_friend_suggest_container input[type="text"] {margin-bottom:7px;}
+}
