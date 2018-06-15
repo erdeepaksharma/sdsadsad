@@ -1,0 +1,595 @@
+
+#DIFFERENT FOR ALL LISTING TYPES
+"ADMIN_ACTIVITY_TYPE_SITEREVIEW_NEW_LISTTYPE_1";"Multiple Listing Types - When a new product is posted."
+"_ACTIVITY_ACTIONTYPE_SITEREVIEW_NEW_LISTTYPE_1";"New product"
+
+"ADMIN_ACTIVITY_TYPE_SITEREVIEW_NEW_LISTTYPE_1";"Multiple Listing Types - When a new product is posted in a module."
+"_ACTIVITY_ACTIONTYPE_SITEREVIEW_NEW_LISTTYPE_1";"New product in a module."
+
+"ADMIN_ACTIVITY_TYPE_SITEREVIEW_PHOTO_UPLOAD_LISTTYPE_1";"Multiple Listing Types - When someone uploads a photo to product."
+"_ACTIVITY_ACTIONTYPE_SITEREVIEW_PHOTO_UPLOAD_LISTTYPE_1";"Uploading a photo to product"
+
+"ADMIN_ACTIVITY_TYPE_VIDEO_SITEREVIEW_LISTTYPE_1";"Multiple Listing Types - When someone uploads a video to product."
+"_ACTIVITY_ACTIONTYPE_VIDEO_SITEREVIEW_LISTTYPE_1";"Uploading a video to product"
+
+"ADMIN_ACTIVITY_TYPE_SITEREVIEW_VIDEO_NEW_LISTTYPE_1";"Multiple Listing Types - When someone uploads a video to product."
+"_ACTIVITY_ACTIONTYPE_SITEREVIEW_VIDEO_NEW_LISTTYPE_1";"Uploading a video to product"
+
+"ADMIN_ACTIVITY_TYPE_SITEREVIEW_REVIEW_ADD_LISTTYPE_1";"Multiple Listing Types - When someone write a review on product."
+"_ACTIVITY_ACTIONTYPE_SITEREVIEW_REVIEW_ADD_LISTTYPE_1";"Writing a new product review"
+
+"ADMIN_ACTIVITY_TYPE_SITEREVIEW_TOPIC_CREATE_LISTTYPE_1";"Multiple Listing Types - When someone creates a new product topic."
+"_ACTIVITY_ACTIONTYPE_SITEREVIEW_TOPIC_CREATE_LISTTYPE_1";"Creating product discussion topic"
+
+"ADMIN_ACTIVITY_TYPE_SITEREVIEW_TOPIC_REPLY_LISTTYPE_1";"Multiple Listing Types - When someone replies to product topic."
+"_ACTIVITY_ACTIONTYPE_SITEREVIEW_TOPIC_REPLY_LISTTYPE_1";"Replying to product discussion topic"
+
+"ADMIN_ACTIVITY_TYPE_SITEREVIEW_CHANGE_PHOTO_LISTTYPE_1";"Multiple Listing Types - When product Owner change their product profile photo as User."
+"_ACTIVITY_ACTIONTYPE_SITEREVIEW_CHANGE_PHOTO_LISTTYPE_1";"When product Owner change their product profile photo as User"
+
+"ADMIN_ACTIVITY_TYPE_SITEREVIEW_WISHLIST_ADD_LISTING_LISTTYPE_1";"Multiple Listing Types - When someone adds product in wishlist."
+"_ACTIVITY_ACTIONTYPE_SITEREVIEW_WISHLIST_ADD_LISTING_LISTTYPE_1";"Adding product to wishlist"
+
+"{item:$subject} posted a new product listing:";"{item:$subject} posted a new product listing:"
+
+"{item:$subject} added {var:$count} photo(s) to the product listing: {item:$object:$title} {body:$body}";"{item:$subject} added {var:$count} photo(s) to the product listing: {item:$object:$title} {body:$body}"
+
+"{item:$subject} posted a new discussion {item:$object:topic} in the product listing {itemParent:$object:sitereview}: {body:$body}";"{item:$subject} posted a {item:$object:topic} in the product listing {itemParent:$object:sitereview}: {body:$body}"
+"{item:$subject} replied to discussion {item:$object:topic} in the product listing {itemParent:$object:sitereview_listing}: {body:$body}";"{item:$subject} replied to discussion {item:$object:topic} in the product listing {itemParent:$object:sitereview_listing}: {body:$body}"
+"{item:$subject} changed the profile picture of the product listing {item:$object:$title}:";"{item:$subject} changed the profile picture of the product listing {item:$object:$title}:"
+"{item:$subject} added a new video in the product listing {item:$object:$title}: {body:$body}";"{item:$subject} added a new video in the product listing {item:$object:$title}: {body:$body}"
+"{item:$subject} added a new video in the product listing {item:$object}:";"{item:$subject} added a new video in the product listing {item:$object}:"
+"{item:$subject} rated and wrote a review for the product listing {item:$object}:";"{item:$subject} rated and wrote a review for the product listing {item:$object}:"
+"{item:$subject} posted a new product listing: {item:$object}.";"{item:$subject} posted a new product listing: {item:$object}."
+"{item:$subject} commented on {item:$owner}'s {var:$listingtype} listing {item:$object:$title}: {body:$body}";"{item:$subject} commented on {item:$owner}'s product listing {item:$object:$title}: {body:$body}"
+"{item:$subject} replied to a comment on {item:$owner}'s {var:$listingtype} listing {item:$object:$title}: {body:$body}";"{item:$subject} replied to a comment on {item:$owner}'s product listing {item:$object:$title}: {body:$body}"
+
+#LISTING TYPE DEPENDENT
+"Edit Product Location";"Edit Product Location"
+"Edit the location of your product by clicking on 'Edit Product Location' below. You can accurately mark the position of your product on the map by dragging-and-dropping the marker on the map at the right position, and then clicking on Save Changes to save the position.";"Edit the location of your listing by clicking on 'Edit Listing Location' below. You can accurately mark the position of your listing on the map by dragging-and-dropping the marker on the map at the right position, and then clicking on Save Changes to save the position."
+"You have not added a location for your product. %1$sClick here%2$s to add a location for your product.";"You have not added a location for your listing. %1$sClick here%2$s to add a location for your listing."
+
+#LISTING TYPE DEPENDENT
+"Post New Product";"Post New Listing"
+"Compose your new product below, then click 'Submit' to publish the product.";"Compose your new listing below, then click 'Submit' to publish the listing."
+"Product Title";"Listing Title"
+"Who may see this product?";"Who may see this listing?"
+"Who may comment on this product?";"Who may comment on this listing?"
+"Who may upload photos for this product?";"Who may upload photos for this listing?"
+"Who may create videos for this product?";"Who may create videos for this listing?"
+"Select the networks, members of which should be able to see your product. (Press Ctrl and click to select multiple networks. You can also choose to make your product viewable to everyone.)";"Select the networks, members of which should be able to see your listing. (Press Ctrl and click to select multiple networks. You can also choose to make your listing viewable to everyone.)"
+"Show this product in search results";"Show this listing in search results"
+"Show this product on browse page and in various blocks.";"Show this product on browse page and in various blocks."
+"SEPARATE_PRODUCT_TAGS_WITH_COMMAS";"Separate tags with commas."
+"Your product has been successfully created. You can enhance your product from this Dashboard by creating other components.";"Your listing has been successfully created. You can enhance your listing from this Dashboard by creating other components."
+"View Product";"View Listing"
+"View Product &raquo;";"View Listing &raquo;"
+"End product on a specific date. (Please select date by clicking on the calendar icon below.)";"End listing on a specific date. (Please select date by clicking on the calendar icon below.)"
+"When should this product end?";"When should this listing end?"
+"Note: your product will be expired in %1$s %2$s after an approval or it may be changed by admin.";"Note: your listing will be expired in %1$s %2$s after an approval or it may be changed by admin."
+
+#LISTING TYPE DEPENDENT
+"All Products";"All Listings"
+"Only Open Products";"Only Open Listings"
+"Only Closed Products";"Only Closed Listings"
+"Everyone's Products";"Everyone's Listings"
+"Only My Friends' Products";"Only My Friends' Listings"
+"Products I Like";"Listings I Like"
+"Only Expired Products";"Only Expired Listings"
+"Products Having";"Listings Having"
+"Only Products With Photos";"Only Listings With Photos"
+"Only Product With Photos";"Only Listing With Photos"
+
+#Sitereview/Form/Overview
+#LISTING TYPE DEPENDENT 
+"Edit the overview for your product using the editor below, and then click 'Save Overview' to save changes.";"Edit the overview for your listing using the editor below, and then click 'Save Overview' to save changes."
+"DASHBOARD_PRODUCT_SAVE_OVERVIEW";"Save Overview"
+"DASHBOARD_PRODUCT_EDIT_OVERVIEW";"Edit Overview"
+"Edit Product Overview";"Edit Product Overview"
+
+#Sitereview/Form/Contact
+"Contact information will be displayed on your product profile.";"Contact information will be displayed on your product profile."
+
+#Sitereview/Form/Priceinfo/Add
+#LISTING TYPE DEPENDENT
+"ADD_DASHBOARD_PRODUCT_WHERE_TO_BUY_OPTION";"Add Where to Buy Option"
+"EDIT_DASHBOARD_PRODUCT_WHERE_TO_BUY_OPTION";"Edit Where to Buy"
+"Add DASHBOARD_PRODUCT_WHERE_TO_BUY option for this product using the form below. Enter the name of the Store and other details where this product is available.";"Add Where to Buy option for this listing using the form below. Enter the name of the Store and other details where this listing is available."
+"Select the online store for your product from available stores drop-down below.";"Select the online store for your listing from available stores drop-down below."
+"Enter the URL of the Store's webpage where this product is available. (We recommend you to enter complete URL.)";"Enter the URL of the Store's webpage where this listing is available. (We recommend you to enter complete URL.)"
+
+#Sitereview/Form/Style
+#LISTING TYPE DEPENDENT
+"Edit Product Style";"Edit Product Style"
+"Edit the CSS style of your product using the text area below, and then click 'Save Style' to save changes.";"Edit the CSS style of your listing using the text area below, and then click 'Save Style' to save changes."
+"Add your own CSS code above to give your product a more personalized look.";"Add your own CSS code above to give your listing a more personalized look."
+"Custom Advanced product Style";"Custom Advanced listing Style"
+"Meta keywords are a great way to provide search engines with information about your product so that search engines populate your product in search results. Below, you can add meta keywords for this product. (The tags entered by you for this product will also be added to the meta keywords.)";"Meta keywords are a great way to provide search engines with information about your product so that search engines populate your product in search results. Below, you can add meta keywords for this listing. (The tags entered by you for this listing will also be added to the meta keywords.)"
+
+
+#Sitereview/Form/Edit
+#LISTING TYPE DEPENDENT
+"Edit Product Info";"Edit Product Info"
+"Edit the information of your product using the form below.";"Edit the information of your listing using the form below."
+
+#Sitereview/index/delete.tpl
+#LISTING TYPE DEPENDENT
+"Delete Product?";"Delete Product?"
+"Are you sure that you want to delete the Product with the title ""%1$s"" last modified %2$s? It will not be recoverable after being deleted.";"Are you sure that you want to delete the Listing with the title ""%1$s"" last modified %2$s? It will not be recoverable after being deleted."
+
+#LISTING TYPE DEPENDENT
+"You have not added a location for your product. %s to add a location for your product.";"You have not added a location for your listing. %s to add a location for your listing."
+
+#LISTING TYPE DEPENDENT
+"(You can edit the end date to make the product live again.)";"(You can edit the end date to make the listing live again.)"
+"You do not have any product that match your search criteria.";"You do not have any listing that match your search criteria."
+"You do not have any products.";"You do not have any listings."
+"Get started by %1$sposting%2$s a new product.";"Get started by %1$sposting%2$s a new listing."
+
+#LISTING TYPE DEPENDENT
+"You have already created the maximum number of products allowed. If you would like to create a new product, please delete an old one first.";"You have already created the maximum number of listings allowed. If you would like to create a new listing, please delete an old one first."
+"Publish Product";"Publish Listing"
+"Close Product";"Close Listing"
+"Open Product";"Open Listing"
+"Delete Product";"Delete Listing"
+
+#Sitereview/index/tagscloud.tpl
+#LISTING TYPE DEPENDENTS
+"Popular Product Tags";"Popular Listing Tags"
+"Browse the tags created for product by the various members.";"Browse the tags created for listing by the various members."
+
+#LISTING TYPE DEPENDENT
+"Edit Product Photos";"Edit Product Photos"
+"Edit and manage the photos of your product below.";"Edit and manage the photos of your listing below."
+"An attractive photo and video Slideshow will be displayed on your Product Profile page. Below, you can choose the photos to be displayed in this slideshow by using the 'Show in Slideshow' option.";"An attractive photo and video Slideshow will be displayed on your Product Profile page. Below, you can choose the photos to be displayed in this slideshow by using the 'Show in Slideshow' option."
+"You can also choose the photo snapshot for the video displayed in the slideshow by using 'Video Snapshot' option.";"You can also choose the photo snapshot for the video displayed in the slideshow by using 'Video Snapshot' option."
+"There are currently no photos in this product. %1$sClick here%2$s to add photos now!";"There are currently no photos in this listing. %1$sClick here%2$s to add photos now!"
+"Choose photos on your computer to add to this product. (2MB maximum).";"Choose photos on your computer to add to this listing. (2MB maximum)."
+
+#LISTING TYPE DEPENDENT
+"DASHBOARD_PRODUCT_WHERE_TO_BUY options of %s";"Where to Buy options of %s"
+"There are currently no DASHBOARD_PRODUCT_WHERE_TO_BUY option for this product. Click %s to add options now!";"There are currently no Where to Buy option for this listing. Click %s to add options now!"
+
+#Sitereview/video/edit.tpl
+#LISTING TYPE DEPENDENT
+"Edit Product Videos";"Edit Product Videos"
+"Edit and manage the videos of your product below.";"Edit and manage the videos of your listing below."
+"There are currently no videos in this product. Click %s to add videos now!";"There are currently no videos in this listing. Click %s to add videos now!"
+"An attractive photo and video Slideshow will be displayed on your Product Profile page. Below, you can select a video to be displayed in that slideshow by using the 'Show in Slideshow' option.";"An attractive photo and video Slideshow will be displayed on your Product Profile page. Below, you can select a video to be displayed in that slideshow by using the 'Show in Slideshow' option."
+"Add a new video in this product using the form below.";"Add a new video in this listing using the form below."
+
+#LISTING TYPE DEPENDENT
+"Click 'Add Photos' to select one or more photos from your computer. After you have selected the photos, they will begin to upload right away. When your upload is finished, click the button below your photo to save them to your product.";"Click 'Add Photos' to select one or more photos from your computer. After you have selected the photos, they will begin to upload right away. When your upload is finished, click the button below your photo to save them to your listing."
+
+#LISTING TYPE DEPENDENT
+"Go to the Product %s";"Go to the Product %s"
+"Please %s to update your reviews for this Product.";"Please %s to update your reviews for this Listing."
+
+#widgets/newlisting-sitereview/index.tpl
+#LISTING TYPE DEPENDENT
+"Post a New Product";"New Product"
+
+#LISTING TYPE DEPENDENT
+"You have not composed an overview for your product. Click %s to compose it from the Dashboard of your product.";"You have not composed an overview for your listing. Click %s to compose it from the Dashboard of your listing."
+
+#LISTING TYPE DEPENDENT
+"You have not added any photo in your product. %1$sClick here%2s to add your first photo.";"You have not added any photo in your listing. %1$sClick here%2s to add your first photo."
+
+#LISTING TYPE DEPENDENT
+"You have not added any video in your product. %1$sClick here%2$s to add your first video.";"You have not added any video in your listing. %1$sClick here%2$s to add your first video."
+"There are currently no videos in this product. %1$sClick here%2$s to add your first video.";"There are currently no videos in this listing. %1$sClick here%2$s to add your first video."
+
+#widgets/zerolisting-sitereview/index.tpl
+#LISTING TYPE DEPENDENT
+"No products have been posted yet.";"No listings have been posted yet."
+
+"BE_THE_FIRST_PRODUCT_TO %1$spost%2$s one!";"Be the first to %1$spost%2$s one!"
+"posted by";"posted by"
+
+#widgets/browse-listings-sitereview/index.tpl
+"Nobody has posted a product with that criteria.";"Nobody has posted a listing with that criteria."
+"Be the first to product %1$spost%2$s one!";"Be the first to %1$spost%2$s one!"
+
+#LISTING TYPE DEPENDENT
+"This is the product browse page.";"This is the product browse page."
+
+#LISTING TYPE DEPENDENT
+"Create your message with the form given below. (This message will be sent to the owner of this Product.)";"Create your message with the form given below. (This message will be sent to the owner of this Product.)"
+
+#DASHBOARD
+#LISTING TYPE DEPENDENT
+"DASHBOARD_PRODUCT_WHERE_TO_BUY";"Where to Buy"
+"DASHBOARD_PRODUCT_OVERVIEW";"Overview"
+"Products Home";"Products Home"
+"Browse Products";"Browse Products"
+"My Products";"My Products"
+"Top Rated Products";"Top Rated Products"
+"Most Liked Products";"Most Liked Products"
+"Popular Products";"Popular Products"
+"Most Commented Products";"Most Commented Products"
+"PRODUCT_TAG_(Keywords)";"Tags (Keywords)"
+"Please %1$sclick here%2$s to give your review and ratings for this product.";"Please %1$sclick here%2$s to give your review and ratings for this listing."
+"Please %1$sclick here%2$s to update your reviews for this product.";"Please %1$sclick here%2$s to update your reviews for this listing."
+
+#LISTING TYPE DEPENDENT
+"Please select the wishlists in which you want to add this product.";"Please select the wishlists in which you want to add this listing."
+"You have not created any wishlist yet. Get Started by creating and adding products.";"You have not created any wishlist yet. Get Started by creating and adding listings."
+"You can also add this product in a new wishlist below:";"You can also add this listing in a new wishlist below:"
+"PRODUCT_TAG :";"Tag :"
+"PRODUCT_TAGS:";"Tags:"
+"PRODUCT_TAGS";"Tags"
+"EXPLORE_PRODUCT_TAGS &raquo;";"Explore Tags &raquo;"
+"Featured Products";"Featured Products"
+"Sponsored Products";"Sponsored Products"
+"Edit Product Overview";"Edit Product Overview"
+"%s product found.";"%s listing found.";"%s listings found."
+"%s product";"%s listing";"%s listings"
+"%s product entry";"%s listing entry";"%s listings entries"
+"Products";"Products"
+"Product of the Day";"Product of the Day"
+
+#widgets/closelisting-sitereview/index.tpl
+"This product has been closed by the owner.";"This listing has been closed by the owner."
+
+#DEPENDENT ON LISTINGTYPE
+"What do you like about this Product?";"What do you like about this Listing?"
+"What do you dislike about this Product?";"What do you dislike about this Listing?"
+"You may add a video to your product either by choosing from your existing videos, or by posting a new video:";"You may add a video to your listing either by choosing from your existing videos, or by posting a new video:"
+"No discussion topics have been posted in this product yet. Click %1$s to start a discussion.";"No discussion topics have been posted in this listing yet. Click %1$s to start a discussion."
+"'s Product";"'s Listing"
+"This message corresponds to the Product: ";"This message corresponds to the Listing: "
+"Your product's location has been modified successfully.";"Your listing's location has been modified successfully."
+"PRODUCT_STORE";"Store"
+"PRODUCT_STORE_URL";"Store URL"
+"Popular Tags";"Popular Tags"
+"Popular Tags (%s)";"Popular Tags (%s)"
+"Delete DASHBOARD_PRODUCT_WHERE_TO_BUY?";"Delete Where to Buy?"
+"Are you sure that you want to delete this DASHBOARD_PRODUCT_WHERE_TO_BUY? It will not be recoverable after being deleted.";"Are you sure that you want to delete this Where to Buy? It will not be recoverable after being deleted."
+"Note: Users will not be able to create listings in '%s', until you have created atleast one category. Please create some categories from the Admin Panel for this listing type to enable users to create listings.";"Note: Users will not be able to create listings in '%s', until you have created atleast one category. Please create some categories from the Admin Panel for this listing type to enable users to create listings."
+"Sorry, you can not post a new listing right now. Please try again after sometime or contact us by filling the 'Contact Us' form using the 'Contact' link available in the footer of our site.";"Sorry, you can not post a new listing right now. Please try again after sometime or contact us by filling the 'Contact Us' form using the 'Contact' link available in the footer of our site."
+"PRODUCT_POSTED_BY";"Posted By"
+"PRODUCT_POSTED_ON:";"Posted On :"
+"PRODUCT_POSTED_BY:";"Posted By :"
+"PRODUCT_posted_by";"posted by"
+"VIEW_ALL_PRODUCT_STORES";"View all Stores &raquo;"
+"ENTER_THE_ADDRESS_OF_PRODUCT_STORE";"Enter the address of the store."
+"PRODUCT_AT %s store";"at %s store";"at %s stores"
+"* The above cost for the %s is estimated and may slightly vary after including the taxes, manufacturer rebate, shipping cost, or any other sales / promotion on products Stores.";"* The above cost for the %s is estimated and may slightly vary after including the taxes, manufacturer rebate, shipping cost, or any other sales / promotion on Stores."
+"No reviews have been written for this product yet.";"No reviews have been written for this listing yet."
+"Select the best alternatives for %s below. (Selected alternatives will be displayed in 'Best Alternatives' block on this product's profile page.)";"Select the best alternatives for %s below. (Selected alternatives will be displayed in 'Best Alternatives' block on this product's profile page.)"
+"Select the Store where this product is available.";"Select the Store where this listing is available."
+"This product has beed expired.";"This listing has beed expired."
+"Edit Where to Buy option for this product using the form below.";"Edit Where to Buy option for this listing using the form below."
+"NEW_PRODUCT_WHERE_TO_BUY_OPTION_HAS_BEEN_ADDED_SUCCESSFULLY";"New 'Where to Buy' option has been added successfully."
+"EDIT_PRODUCT_WHERE_TO_BUY_OPTION_HAS_BEEN_EDITED_SUCCESSFULLY";"'Where to Buy' option has been edited successfully."
+"DELETE_PRODUCT_WHERE_TO_BUY_OPTION_HAS_BEEN_DELETED_SUCCESSFULLY";"'Where to Buy' option has been deleted successfully."
+"Oops! Something went wrong and you can not add this Product to your wishlist. Please try again after sometime.";"Oops! Something went wrong and you can not add this Listing to your wishlist. Please try again after sometime."
+"Showing products tagged with: ";"Showing listings tagged with: "
+"No product have been posted yet.";"No listing have been posted yet."
+"If this product is published, it cannot be switched back to draft mode.";"If this listing is published, it cannot be switched back to draft mode."
+
+"You are already subscribed to this member's products.";"You are already subscribed to this member's listings."
+"Would you like to subscribe to this member's products?";"Would you like to subscribe to this member's listings?"
+"You are now subscribed to this member's products.";"You are now subscribed to this member's listings."
+"You are already not subscribed to this member's products.";"You are already not subscribed to this member's listings."
+"Would you like to unsubscribe from this member's products?";"Would you like to unsubscribe from this member's listings?"
+"You are no longer subscribed to this member's products.";"You are no longer subscribed to this member's listings."
+"{item:$subject} added a new event in the product listing {item:$object}:";"{item:$subject} added a new event in the product listing {item:$object}:"
+"Who may post discussion topics for this product?";"Who may post discussion topics for this listing?"
+"Who may create event for this product?";"Who may create event for this listing?"
+"ADMIN_ACTIVITY_TYPE_SITEREVIEW_EVENT_NEW_LISTTYPE_1";"Multiple Listing Types - When someone creates a new event in product listing."
+"_ACTIVITY_ACTIONTYPE_SITEREVIEW_EVENT_NEW_LISTTYPE_1";"Create event in product listing"
+
+#CLAIM FUNCTIONALITY WORK
+"Products I Have Claimed";"Products I Have Claimed"
+"There are no products to be claimed yet.";"There are no listings to be claimed yet."
+"About You and Your product: ";"About You and Your listing: "
+"You have not claimed for any products yet.";"You have not claimed for any listings yet."
+"Create a Product";"Create a Listing"
+
+#PACKAGE WORK
+"Create a product using these quick, easy steps and get going.";"Create a listing using these quick, easy steps and get going."
+"1. Choose a product Package";"1. Choose a listing Package"
+"Select a package that best matches your requirements. Packages differ in terms of features available to products created under them. You can change your package anytime later.";"Select a package that best matches your requirements. Packages differ in terms of features available to listings created under them. You can change your package anytime later."
+"Are you sure you want to change package for this Product? Once you change package, all the settings of this product will be applied according to the new package, including features available, price, etc.";"Are you sure you want to change package for this Listing? Once you change package, all the settings of this listing will be applied according to the new package, including features available, price, etc."
+"If you want to change the package for your product, please select one package from the following list of available packages.";"If you want to change the package for your listing, please select one package from the following list of available packages."
+"Note: Once you change package for your product, all the settings of the product will be applied according to the new package, including apps available, features available, price, etc.";"Note: Once you change package for your listing, all the settings of the listing will be applied according to the new package, including apps available, features available, price, etc."
+"Thank you for submitting your payment. Your payment is currently pending - your product will be activated when we are notified that the payment has completed successfully. Please return to our login product when you receive an email notifying you that the payment has completed.";"Thank you for submitting your payment. Your payment is currently pending - your listing will be activated when we are notified that the payment has completed successfully. Please return to our login listing when you receive an email notifying you that the payment has completed."
+"You have already applied for this product.";"You have already applied for this listing."
+"Back to Dashboard product";"Back to Dashboard listing"
+"Back to My products";"Back to My listings"
+"Thank you! Your payment for your product has been completed successfully.";"Thank you! Your payment for your listing has been completed successfully."
+"Continue to Dashboard product";"Continue to Dashboard listing"
+"Continue to My products";"Continue to My listings"
+"Back to Dashboard product";"Back to Dashboard listing"
+"Back to My products";"Back to My listings"
+"Your product is pending payment. You will receive an email when the
+  payment completes.";"Your listing is pending payment. You will receive an email when the
+  payment completes."
+"You have created a product that requires payment. You will be taken to a secure checkout area where you can pay for your product.";"You have created a listing that requires payment. You will be taken to a secure checkout area where you can pay for your listing."
+"Order your Product";"Order your Listing"
+"Your Product requires payment:";"Your Listing requires payment:"
+"There are currently no paid packages available of the site. Please upgrade your package.";"There are currently no paid packages available of the site. Please upgrade your package."
+" to renew product.";" to renew listing."
+"The package for your Product requires payment. You have not fulfilled the payment for this Product.";"The package for your Listing requires payment. You have not fulfilled the payment for this Listing."
+"Your package for this Product has expired and needs to be renewed.";"Your package for this Listing has expired and needs to be renewed."
+"Your package for this Product is about to expire and needs to be renewed.";"Your package for this Listing is about to expire and needs to be renewed."
+"Post New Product";"Post New Listing"
+"Create a product using these quick, easy steps and get going.";"Create a listing using these quick, easy steps and get going."
+"2. Configure your product based on the package you have chosen.";"2. Configure your listing based on the package you have chosen."
+"Below, you can file a claim for a product on this community that you believe should be owned by you. Your request will be sent to the administration.";"Below, you can file a claim for a listing on this community that you believe should be owned by you. Your request will be sent to the administration."
+"Product Name";"Listing Name"
+"Start typing the name of the product";"Start typing the name of the listing"
+"About You and the Product";"About You and the Listing"
+"Renew Product";"Renew Listing"
+
+#PACKAGE WORK MAIL
+"_EMAIL_SITEREVIEW_PRODUCT_CANCELLED_TITLE";"Product Listing Cancelled"
+"_EMAIL_SITEREVIEW_PRODUCT_CANCELLED_DESCRIPTION";"This is the email that gets sent to a member when their product listing is cancelled."
+"_EMAIL_SITEREVIEW_PRODUCT_CANCELLED_SUBJECT";"Your product listing: [list_title] has been cancelled."
+"_EMAIL_SITEREVIEW_PRODUCT_CANCELLED_BODY";"[header]
+
+Your product listing: [list_title_with_link] has been cancelled.
+
+To visit this product listing, click on the link below, or copy-paste it in your browser:
+[object_link]
+
+If your product listing required to be renewed, then you may do so from its dashboard.
+
+[footer]"
+"_EMAIL_SITEREVIEW_PRODUCT_EXPIRED_TITLE";"Product Listing Expired: (for free packages)"
+"_EMAIL_SITEREVIEW_PRODUCT_EXPIRED_DESCRIPTION";"This is the email that gets sent to a member when their product listing belonging to a free package expires."
+"_EMAIL_SITEREVIEW_PRODUCT_EXPIRED_SUBJECT";"Your product Listing: [list_title] has expired."
+"_EMAIL_SITEREVIEW_PRODUCT_EXPIRED_BODY";"[header]
+
+
+Your product listing: [list_title_with_link] has expired. It has reached the limit of its package.
+
+
+To visit this product listing, click on the link below, or copy-paste it in your browser:
+[object_link]
+
+
+[footer]"
+"_EMAIL_SITEREVIEW_PRODUCT_RENEW_TITLE";"Listing Expired: (for paid packages)"
+"_EMAIL_SITEREVIEW_PRODUCT_RENEW_DESCRIPTION";"This is the email that gets sent to a member when their listing belonging to a paid package expires."
+"_EMAIL_SITEREVIEW_PRODUCT_RENEW_SUBJECT";"Your product Listing: [list_title] has expired and needs to be renewed."
+"_EMAIL_SITEREVIEW_PRODUCT_RENEW_BODY";"[header]
+
+Your product listing: [list_title_with_link] has expired. It has reached the limit of its package. You may renew this listing from its dashboard.
+
+To visit this product listing, click on the link below, or copy-paste it in your browser:
+[object_link]
+
+[footer]"
+"_EMAIL_SITEREVIEW_PRODUCT_OVERDUE_TITLE";"Product Listing Overdue"
+"_EMAIL_SITEREVIEW_PRODUCT_OVERDUE_DESCRIPTION";"This is the email that gets sent to a member when their product listing is overdue."
+"_EMAIL_SITEREVIEW_PRODUCT_OVERDUE_SUBJECT";"Your product listing: [list_title] is overdue."
+"_EMAIL_SITEREVIEW_PRODUCT_OVERDUE_BODY";"[header]
+
+Your product listing: [list_title_with_link] is overdue because of a failed or missed payment.
+
+To visit this product listing, click on the link below, or copy-paste it in your browser:
+[object_link]
+
+To renew your product listing, you may do so from its dashboard.
+
+[footer]"
+"_EMAIL_SITEREVIEW_PRODUCT_PENDING_TITLE";"Product Listing Activation Pending"
+"_EMAIL_SITEREVIEW_PRODUCT_PENDING_DESCRIPTION";"This is the email that gets sent to a member when their product listing activation is pending."
+"_EMAIL_SITEREVIEW_PRODUCT_PENDING_SUBJECT";"Your product listing activation is pending."
+"_EMAIL_SITEREVIEW_PRODUCT_PENDING_BODY";"[header]
+
+Thank you for creating your product listing on our social network! Your listing activation is pending, awaiting completion of the transaction. Your listing will be activated soon; we will notify you by email when it is ready.
+Thank you for your patience.
+
+[list_title]
+[list_description]
+
+[footer]"
+
+"_EMAIL_SITEREVIEW_PRODUCT_ACTIVE_TITLE";"Product Listing Activated"
+"_EMAIL_SITEREVIEW_PRODUCT_ACTIVE_DESCRIPTION";"This is the email that gets sent to a member when their product listing is activated."
+"_EMAIL_SITEREVIEW_PRODUCT_ACTIVE_SUBJECT";"Your product listing: [list_title] is now active."
+"_EMAIL_SITEREVIEW_PRODUCT_ACTIVE_BODY";"[header]
+
+Thank you for creating your product listing on [site_title]! Your listing is now active.
+
+[list_title]
+[list_description]
+
+To visit this product listing, click on the link below, or copy-paste it in your browser:
+[object_link]
+
+[footer]"
+
+"_EMAIL_SITEREVIEW_PRODUCT_RECURRENCE_TITLE";"Product Listing Payment Recurrence"
+"_EMAIL_SITEREVIEW_PRODUCT_RECURRENCE_DESCRIPTION";"This is the email that gets sent to a member when they are billed for a recurring payment."
+"_EMAIL_SITEREVIEW_PRODUCT_RECURRENCE_SUBJECT";"Your payment for your product listing has been billed."
+"_EMAIL_SITEREVIEW_PRODUCT_RECURRENCE_BODY";"[header]
+
+Your payment for your product listing has been billed. You should receive an email from the
+payment gateway regarding this charge. Thank you for subscribing to our social
+network.
+
+[list_title]
+[list_description]
+
+To visit this product listing, click on the link below, or copy-paste it in your browser:
+[object_link]
+
+[footer]"
+"_EMAIL_SITEREVIEW_PRODUCT_REFUNDED_TITLE";"Product Listing Payment Refunded"
+"_EMAIL_SITEREVIEW_PRODUCT_REFUNDED_DESCRIPTION";"This is the email that gets sent to a member when their product listing payment is refunded."
+"_EMAIL_SITEREVIEW_PRODUCT_REFUNDED_SUBJECT";"Your payment for your product listing has been refunded."
+"_EMAIL_SITEREVIEW_PRODUCT_REFUNDED_BODY";"[header]
+
+Your payment for your product listing has been refunded.
+
+[list_title]
+[list_description]
+
+[footer]"
+"_EMAIL_SITEREVIEW_PRODUCT_APPROVED_TITLE";"Listing Approved"
+"_EMAIL_SITEREVIEW_PRODUCT_APPROVED_DESCRIPTION";"This is the email that gets sent to a member when their product listing is approved."
+"_EMAIL_SITEREVIEW_PRODUCT_APPROVED_SUBJECT";"Your product listing: [list_title] has been approved."
+"_EMAIL_SITEREVIEW_PRODUCT_APPROVED_BODY";"[header]
+
+Thank you for creating your product listing on our social network! Your listing has now been approved.
+
+[list_title]
+[list_description]
+
+To visit this listing, click on the link below, or copy-paste it in your browser:
+[object_link]
+
+[footer]"
+"_EMAIL_SITEREVIEW_PRODUCT_DISAPPROVED_TITLE";"Listing Disapproved"
+"_EMAIL_SITEREVIEW_PRODUCT_DISAPPROVED_DESCRIPTION";"This is the email that gets sent to a member when their listing is disapproved."
+"_EMAIL_SITEREVIEW_PRODUCT_DISAPPROVED_SUBJECT";"Your product listing: [list_title] has been disapproved."
+"_EMAIL_SITEREVIEW_PRODUCT_DISAPPROVED_BODY";"[header]
+
+Your listing has been disapproved.
+
+[list_title]
+[list_description]
+
+To visit this product listing, click on the link below, or copy-paste it in your browser:
+[object_link]
+
+[footer]"
+"_EMAIL_SITEREVIEW_PRODUCT_APPROVAL_PENDING_TITLE";"Product Listing Approval Pending"
+"_EMAIL_SITEREVIEW_PRODUCT_APPROVAL_PENDING_DESCRIPTION";"This is the email that gets sent to a member when their product listing is pending for approval."
+"_EMAIL_SITEREVIEW_PRODUCT_APPROVAL_PENDING_SUBJECT";"Your product listing: [list_title] is in pending state and awaiting administrative approval."
+"_EMAIL_SITEREVIEW_PRODUCT_APPROVAL_PENDING_BODY";"[header]
+
+Your product listing is in pending state and awaiting administrative approval.
+
+[list_title]
+[list_description]
+
+To visit this product listing, click on the link below, or copy-paste it in your browser:
+[object_link]
+
+[footer]"
+"_EMAIL_SITEREVIEW_PRODUCT_DECLINED_TITLE";"Product Listing Declined"
+"_EMAIL_SITEREVIEW_PRODUCT_DECLINED_DESCRIPTION";"This is the email that gets sent to a member when their product listing is declined."
+"_EMAIL_SITEREVIEW_PRODUCT_DECLINED_SUBJECT";"Your product listing: [list_title] has been declined."
+"_EMAIL_SITEREVIEW_PRODUCT_DECLINED_BODY";"[header]
+
+Your product listing has been declined.
+
+[list_title]
+[list_description]
+
+[footer]"
+
+#CLAIM FUNCTIONALITY EMAIL WORK
+
+"_EMAIL_SITEREVIEW_PRODUCT_CHANGEOWNER_EMAIL_TITLE";"Product - Listing Owner Changed"
+"_EMAIL_SITEREVIEW_PRODUCT_CHANGEOWNER_EMAIL_DESCRIPTION";"This is the email that goes to a member when owner of their product listing has been changed."
+"_EMAIL_SITEREVIEW_PRODUCT_CHANGEOWNER_EMAIL_SUBJECT";"Owner of the product listing: [list_title] has been changed."
+"_EMAIL_SITEREVIEW_PRODUCT_CHANGEOWNER_EMAIL_BODY";"[header]
+
+The owner of the product listing: [list_title_with_link] has been changed. You are now no more the owner of this listing. All ownership rights for this listing have been transferred to the new owner.
+
+For any queries or comments, you may contact us here: [site_contact_us_link].
+
+To visit this product listing, click on the link below, or copy-paste it in your browser:
+[object_link]
+
+[footer]"
+
+"_EMAIL_SITEREVIEW_PRODUCT_CLAIMOWNER_EMAIL_TITLE";"Product Listing Claimed"
+"_EMAIL_SITEREVIEW_PRODUCT_CLAIMOWNER_EMAIL_DESCRIPTION";"This mail is sent to the Site Admin when any member claims that Listing."
+"_EMAIL_SITEREVIEW_PRODUCT_CLAIMOWNER_EMAIL_SUBJECT";"This product listing: [list_title] has been claimed."
+"_EMAIL_SITEREVIEW_PRODUCT_CLAIMOWNER_EMAIL_BODY";"[header]
+
+This product listing: [list_title_with_link] has been claimed.
+
+To view this product listing, click on the link below, or copy-paste it in your browser:
+[object_link]
+
+[footer]
+"
+
+
+"_EMAIL_SITEREVIEW_PRODUCT_CLAIM_APPROVED_EMAIL_TITLE";"Product - Listing Owner Changed"
+"_EMAIL_SITEREVIEW_PRODUCT_CLAIM_APPROVED_EMAIL_DESCRIPTION";"This is the email that goes to a member when their claim for a listing has been approved."
+"_EMAIL_SITEREVIEW_PRODUCT_CLAIM_APPROVED_EMAIL_SUBJECT";"Your claim for product listing: [list_title] has been approved"
+"_EMAIL_SITEREVIEW_PRODUCT_CLAIM_APPROVED_EMAIL_BODY";"[header]
+
+Congratulations! Your claim for the product Listing: [list_title_with_link] has been approved. You are now the owner of this listing.
+
+To visit this product listing, click on the link below, or copy-paste it in your browser:
+[object_link]
+
+[footer]"
+
+"_EMAIL_SITEREVIEW_PRODUCT_BECOMEOWNER_EMAIL_TITLE";Product - Listing Ownership Given"
+"_EMAIL_SITEREVIEW_PRODUCT_BECOMEOWNER_EMAIL_DESCRIPTION";"This email goes to the new owner of the product listing when owner of a product listing is changed."
+"_EMAIL_SITEREVIEW_PRODUCT_BECOMEOWNER_EMAIL_SUBJECT";"You are now the owner of the product listing: [list_title]."
+"_EMAIL_SITEREVIEW_PRODUCT_BECOMEOWNER_EMAIL_BODY";"[header]
+
+You are now the owner of the product Listing: [list_title_with_link]. All ownership rights for this listing have been provided to you.
+
+For any queries or comments, you may contact us here: [site_contact_us_link].
+
+To visit this product listing, click on the link below, or copy-paste it in your browser:
+[object_link]
+
+[footer]"
+
+"_EMAIL_SITEREVIEW_PRODUCT_CLAIM_HOLDING_EMAIL_TITLE";"Product Listing Claim Approval on Hold"
+"_EMAIL_SITEREVIEW_PRODUCT_CLAIM_HOLDING_EMAIL_DESCRIPTION";"This is the email that goes to a member when their claim for a product listing has been put on hold for approval."
+"_EMAIL_SITEREVIEW_PRODUCT_CLAIM_HOLDING_EMAIL_SUBJECT";"Your claim for product listing: [list_title] has been put on hold for approval"
+"_EMAIL_SITEREVIEW_PRODUCT_CLAIM_HOLDING_EMAIL_BODY";"[header]
+
+Your claim for the product Listing: [list_title_with_link] has been put on hold for approval.
+
+To visit this listing, click on the link below, or copy-paste it in your browser:
+[object_link]
+
+[comments]
+
+[footer]
+"
+
+"_EMAIL_SITEREVIEW_PRODUCT_CLAIM_DECLINED_EMAIL_TITLE";Product Listing Claim Declined"
+"_EMAIL_SITEREVIEW_PRODUCT_CLAIM_DECLINED_EMAIL_DESCRIPTION";"This is the email that goes to a member when their claim for a product listing has been declined."
+"_EMAIL_SITEREVIEW_PRODUCT_CLAIM_DECLINED_EMAIL_SUBJECT";"Your claim for product listing: [list_title] has been declined"
+"_EMAIL_SITEREVIEW_PRODUCT_CLAIM_DECLINED_EMAIL_BODY";"[header]
+
+Your claim for this product Listing: [list_title_with_link] has been declined.
+
+To visit this product listing, click on the link below, or copy-paste it in your browser:
+[object_link]
+
+[comments]
+
+[footer]
+"
+"PRODUCT Creation";"Listing Creation"
+"Edit Product";"Edit Listing"
+"Edit Product Contact Details";"Edit Listing Contact Details"
+"Edit Product Style";"Edit Listing Style"
+"Edit Product Meta Keywords";"Edit Listing Meta Keywords"
+"Edit Product Overview";"Edit Listing Overview"
+"Edit Product Location";"Edit Listing Location"
+"Edit Product Where to Buy";"Edit Listing Where to Buy"
+"Edit Product Profile Picture";"Edit Listing Profile Picture"
+"Edit Product Photos";"Edit Listing Photos"
+"Edit Product Videos";"Edit Listing Videos"
+"Edit Product 'Where to Buy'";"Edit Listing 'Where to Buy'"
+"Edit Product Details";"Edit Listing Details"
+"Product Listings";"Product Listings"
+"Post new product listings to this page.";"Post new product listings to this page."
+"Post / Manage Product Listings";"Post / Manage Product Listings"
+"Post New Product Listing";"Post New Product Listing"
+"Add Product Listings";"Add Product Listings"
+"Here, you can add various Product Listings to be associated with and displayed on your Page by using the auto-suggest below. From the auto-suggest, you can choose to add the Product Listings created by this Page’s Admins. Listings added by you here will display in a tab on your Page Profile.<br />Below, you can also remove listings added by you by using the link for each.";"Here, you can add various Product Listings to be associated with and displayed on your Page by using the auto-suggest below. From the auto-suggest, you can choose to add the Product Listings created by this Page’s Admins. Listings added by you here will display in a tab on your Page Profile.<br />Below, you can also remove listings added by you by using the link for each."
+"Here, you can add various Product Listings to be associated with and displayed on your Page by using the auto-suggest below. From the auto-suggest, you can choose to add the Product Listings from various Product Listings created on this site. Listings added by you here will display in a tab on your Page Profile.<br />Below, you can also remove listings added by you by using the link for each.";"Here, you can add various Product Listings to be associated with and displayed on your Page by using the auto-suggest below. From the auto-suggest, you can choose to add the Product Listings from various Product Listings created on this site. Listings added by you here will display in a tab on your Page Profile.<br />Below, you can also remove listings added by you by using the link for each."
+"Here, you can add various Product Listings to be associated with and displayed on your Page by using the auto-suggest below. From the auto-suggest, you can choose to add the Product Listings created by you. Listings added by you here will display in a tab on your Page Profile.<br />Below, you can also remove listings added by you by using the link for each.";"Here, you can add various Product Listings to be associated with and displayed on your Page by using the auto-suggest below. From the auto-suggest, you can choose to add the Product Listings created by you. Listings added by you here will display in a tab on your Page Profile.<br />Below, you can also remove listings added by you by using the link for each."
+"Create Products";"Create Products"
+"Manage Products";"Manage Products"
+"Editors In Products"";"Editors In Products"

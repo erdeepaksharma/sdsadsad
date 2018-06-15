@@ -1,0 +1,47 @@
+/* $Id: style_sitereview_video.css 6590 2013-04-01 00:00:00Z SocialEngineAddOns Copyright 2012-2013 BigStep Technologies Pvt. Ltd. $ */
+
+.sr_video_view{
+	clear:both;
+	border-top-width:1px;
+	padding-top:10px;
+}
+.sr_video_view h3{
+	margin-bottom: 5px;
+}
+.sr_video_view .sr_video_embed{
+	margin: 10px 0px 3px 0px;
+}
+.sr_video_view .sr_video_date{
+	font-size: .8em;
+	margin-bottom:3px;
+}
+.sr_video_view .rating{
+	margin-top: 7px;
+}
+.sr_video_view #comments{
+	margin-top: 10px;
+	border-top-width: 1px;
+	padding-top: 10px;
+}
+.sr_video_view .comments_options span{
+	font-weight: bold;
+	font-size: 1em;
+	margin-bottom: 6px;
+}
+.sr_video_view_options{
+	margin-top:10px;
+}
+.sr_video_view_options > a{
+	font-size:11px;
+	line-height:16px;
+}
+.layout_sitereview_video_profile_sitereview_videos h3{
+	display:none;
+}
+.layout_sitereview_show_same_poster,
+.layout_sitereview_show_same_tags,
+.layout_sitereview_show_also_liked{
+	margin-bottom:15px;
+	clear:both;
+	overflow:hidden;
+}

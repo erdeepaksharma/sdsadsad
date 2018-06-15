@@ -1,0 +1,421 @@
+/* $Id: style_rating.css 6590 2013-04-01 00:00:00Z SocialEngineAddOns Copyright 2012-2013 BigStep Technologies Pvt. Ltd. $ */
+
+/* User Rating*/
+.sr_ug_rating{
+	background-image:url(../images/rating/stars-y.png);
+	background-repeat:no-repeat;
+	width:95px;
+	height:17px;
+	padding:0;
+	list-style:none;
+	clear:both;
+	position:relative;
+}
+/* add these classes to the ul to effect the change to the correct number of stars */
+.sr_ug_rating.nostar {background-position:0 0}
+.sr_ug_rating.onestar {background-position:0 -17px;}
+.sr_ug_rating.twostar {background-position:0 -34px;}
+.sr_ug_rating.threestar {background-position:0 -51px;}
+.sr_ug_rating.fourstar {background-position:0 -68px;}
+.sr_ug_rating.fivestar {background-position:0 -85px }
+.sr_ug_rating.sixstar {background-position:0 -102px;}
+.sr_ug_rating.sevenstar {background-position:0 -119px;}
+.sr_ug_rating.eightstar {background-position:0 -136px;}
+.sr_ug_rating.ninestar {background-position:0 -153px;}
+.sr_ug_rating.tenstar {background-position:0 -170px;}
+ul.sr_ug_rating li {
+	cursor: pointer;
+ /*ie5 mac doesn't like it if the list is floated\*/
+	float:left;
+	/* end hide*/
+	text-indent:-999em;
+}
+ul.sr_ug_rating li a {
+	position:absolute;
+	left:0;
+	top:0;
+	width:19px;
+	height:17px;
+	text-decoration:none;
+	z-index: 200;
+}
+ul.sr_ug_rating li.one a {left:0;}
+ul.sr_ug_rating li.two a {left:19px;}
+ul.sr_ug_rating li.three a {left:38px;}
+ul.sr_ug_rating li.four a {left:57px;}
+ul.sr_ug_rating li.five a {left:76px;}
+ul.sr_ug_rating li.six a {left:95px;}
+ul.sr_ug_rating li.seven a {left:114px;}
+ul.sr_ug_rating li.eight a {left:133px;}
+ul.sr_ug_rating li.nine a {left:152px;}
+ul.sr_ug_rating li.ten a {left:171px;}
+
+ul.sr_ug_rating li a:hover {
+	background-image: url(../images/rating/stars-y.png);
+	z-index:2;
+	height:17px;
+	overflow:hidden;
+	left:0;	
+	width:95px;
+}
+ul.sr_ug_rating li.one a:hover {background-position:0 -17px;}
+ul.sr_ug_rating li.two a:hover {background-position:0 -34px;}
+ul.sr_ug_rating li.three a:hover {background-position:0 -51px;}
+ul.sr_ug_rating li.four a:hover {background-position:0 -68px;}
+ul.sr_ug_rating li.five a:hover {background-position:0 -85px;}
+ul.sr_ug_rating li.six a:hover {background-position:0 -102px;}
+ul.sr_ug_rating li.seven a:hover {background-position:0 -119px;}
+ul.sr_ug_rating li.eight a:hover {background-position:0 -136px;}
+ul.sr_ug_rating li.nine a:hover {background-position:0 -153px;}
+ul.sr_ug_rating li.ten a:hover {background-position:0 -170px;}
+
+/*Show User Rating*/
+.sr_us_rating{
+	background-image:url(../images/rating/show-stars-y.png);
+	background-repeat:no-repeat;
+	width:95px;
+	height:17px;
+	padding:0;
+	list-style:none;
+	clear:both;
+	position:relative;
+}
+/* add these classes to the ul to effect the change to the correct number of stars */
+.sr_us_rating.nostar {background-position:0 0;}
+.sr_us_rating.halfstar {background-position:0 -17px;}
+.sr_us_rating.onestar {background-position:0 -34px;}
+.sr_us_rating.onehalfstar {background-position:0 -51px;}
+.sr_us_rating.twostar {background-position:0 -68px;}
+.sr_us_rating.twohalfstar {background-position:0 -85px;}
+.sr_us_rating.threestar {background-position:0 -102px;}
+.sr_us_rating.threehalfstar {background-position:0 -119px;}
+.sr_us_rating.fourstar {background-position:0 -136px;}
+.sr_us_rating.fourhalfstar {background-position:0 -153px;}
+.sr_us_rating.fivestar {background-position:0 -170px;}
+.sr_us_rating.fivehalfstar {background-position:0 -187px;}
+.sr_us_rating.sixstar {background-position:0 -204px;}
+.sr_us_rating.sixhalfstar {background-position:0 -221px;}
+.sr_us_rating.sevenstar {background-position:0 -238px;}
+.sr_us_rating.sevevhalfstar {background-position:0 -255px;}
+.sr_us_rating.eightstar {background-position:0 -272px;}
+.sr_us_rating.eighthalfstar {background-position:0 -289px;}
+.sr_us_rating.ninestar {background-position:0 -306px;}
+.sr_us_rating.ninehalfstar {background-position:0 -323px;}
+.sr_us_rating.tenstar {background-position:0 -340px;}
+
+ul.sr_us_rating li {
+	cursor: pointer;
+	float:left;
+	margin:0 3px;
+	text-indent:-999em;
+	clear:none !important;
+}
+/*ul.sr_us_rating li a {
+	position:absolute;
+	left:0;
+	top:0;
+	width:16px;
+	height:16px;
+	text-decoration:none;
+	z-index: 200;
+}
+ul.sr_us_rating li.half a {left:0;}
+ul.sr_us_rating li.one a {left:16px;}
+ul.sr_us_rating li.onehalf a {left:32px;}
+ul.sr_us_rating li.two a {left:48px;}
+ul.sr_us_rating li.twohalf a {left:64px;}
+ul.sr_us_rating li.three a {left:80px;}
+ul.sr_us_rating li.threehalf a {left:96px;}
+ul.sr_us_rating li.four a {left:112px;}
+ul.sr_us_rating li.fourhalf a {left:128px;}
+ul.sr_us_rating li.five a {left:144px;}*/
+
+
+/* Editor Rating*/
+.sr_eg_rating{
+	background-image:url(../images/rating/stars-r.png);
+	background-repeat:no-repeat;
+	width:95px;
+	height:17px;
+	padding:0;
+	list-style:none;
+	clear:both;
+	position:relative;
+}
+/* add these classes to the ul to effect the change to the correct number of stars */
+.sr_eg_rating.nostar {background-position:0 0}
+.sr_eg_rating.onestar {background-position:0 -17px;}
+.sr_eg_rating.twostar {background-position:0 -34px;}
+.sr_eg_rating.threestar {background-position:0 -51px;}
+.sr_eg_rating.fourstar {background-position:0 -68px;}
+.sr_eg_rating.fivestar {background-position:0 -85px }
+.sr_eg_rating.sixstar {background-position:0 -102px;}
+.sr_eg_rating.sevenstar {background-position:0 -119px;}
+.sr_eg_rating.eightstar {background-position:0 -136px;}
+.sr_eg_rating.ninestar {background-position:0 -153px;}
+.sr_eg_rating.tenstar {background-position:0 -170px;}
+
+ul.sr_eg_rating li {
+	cursor: pointer;
+ /*ie5 mac doesn't like it if the list is floated\*/
+	float:left;
+	/* end hide*/
+	text-indent:-999em;
+}
+ul.sr_eg_rating li a {
+	position:absolute;
+	left:0;
+	top:0;
+	width:19px;
+	height:17px;
+	text-decoration:none;
+	z-index: 200;
+}
+ul.sr_eg_rating li.one a {left:0;}
+ul.sr_eg_rating li.two a {left:19px;}
+ul.sr_eg_rating li.three a {left:38px;}
+ul.sr_eg_rating li.four a {left:57px;}
+ul.sr_eg_rating li.five a {left:76px;}
+ul.sr_eg_rating li.six a {left:95px;}
+ul.sr_eg_rating li.seven a {left:114px;}
+ul.sr_eg_rating li.eight a {left:133px;}
+ul.sr_eg_rating li.nine a {left:152px;}
+ul.sr_eg_rating li.ten a {left:171px;}
+
+ul.sr_eg_rating li a:hover {
+	background-image: url(../images/rating/stars-r.png);
+	z-index:2;
+	height:17px;
+	overflow:hidden;
+	left:0;	
+	width:95px;
+}
+ul.sr_eg_rating li.one a:hover {background-position:0 -17px;}
+ul.sr_eg_rating li.two a:hover {background-position:0 -34px;}
+ul.sr_eg_rating li.three a:hover {background-position:0 -51px;}
+ul.sr_eg_rating li.four a:hover {background-position:0 -68px;}
+ul.sr_eg_rating li.five a:hover {background-position:0 -85px;}
+ul.sr_eg_rating li.six a:hover {background-position:0 -102px;}
+ul.sr_eg_rating li.seven a:hover {background-position:0 -119px;}
+ul.sr_eg_rating li.eight a:hover {background-position:0 -136px;}
+ul.sr_eg_rating li.nine a:hover {background-position:0 -153px;}
+ul.sr_eg_rating li.ten a:hover {background-position:0 -170px;}
+
+/*Show Editor Rating*/
+.sr_es_rating{
+	background-image:url(../images/rating/show-stars-r.png);
+	background-repeat:no-repeat;
+	width:95px;
+	height:17px;
+	padding:0;
+	list-style:none;
+	clear:both;
+	position:relative;
+}
+/* add these classes to the ul to effect the change to the correct number of stars */
+.sr_es_rating.nostar {background-position:0 0;}
+.sr_es_rating.halfstar {background-position:0 -17px;}
+.sr_es_rating.onestar {background-position:0 -34px;}
+.sr_es_rating.onehalfstar {background-position:0 -51px;}
+.sr_es_rating.twostar {background-position:0 -68px;}
+.sr_es_rating.twohalfstar {background-position:0 -85px;}
+.sr_es_rating.threestar {background-position:0 -102px;}
+.sr_es_rating.threehalfstar {background-position:0 -119px;}
+.sr_es_rating.fourstar {background-position:0 -136px;}
+.sr_es_rating.fourhalfstar {background-position:0 -153px;}
+.sr_es_rating.fivestar {background-position:0 -170px;}
+.sr_es_rating.fivehalfstar {background-position:0 -187px;}
+.sr_es_rating.sixstar {background-position:0 -204px;}
+.sr_es_rating.sixhalfstar {background-position:0 -221px;}
+.sr_es_rating.sevenstar {background-position:0 -238px;}
+.sr_es_rating.sevevhalfstar {background-position:0 -255px;}
+.sr_es_rating.eightstar {background-position:0 -272px;}
+.sr_es_rating.eighthalfstar {background-position:0 -289px;}
+.sr_es_rating.ninestar {background-position:0 -306px;}
+.sr_es_rating.ninehalfstar {background-position:0 -323px;}
+.sr_es_rating.tenstar {background-position:0 -340px;}
+ul.sr_es_rating li {
+	cursor: pointer;
+	float:left;
+	margin:0 3px;
+	text-indent:-999em;
+	clear:none !important;
+}
+/*ul.sr_es_rating li a {
+	position:absolute;
+	left:0;
+	top:0;
+	width:16px;
+	height:16px;
+	text-decoration:none;
+	z-index: 200;
+}
+ul.sr_es_rating li.half a {left:0;}
+ul.sr_es_rating li.one a {left:19px;}
+ul.sr_es_rating li.onehalf a {left:32px;}
+ul.sr_es_rating li.two a {left:48px;}
+ul.sr_es_rating li.twohalf a {left:64px;}
+ul.sr_es_rating li.three a {left:80px;}
+ul.sr_es_rating li.threehalf a {left:96px;}
+ul.sr_es_rating li.four a {left:112px;}
+ul.sr_es_rating li.fourhalf a {left:128px;}
+ul.sr_es_rating li.five a {left:144px;}*/
+
+/*Show Average Rating*/
+.sr_as_rating{
+	background-image:url(../images/rating/show-stars-b.png);
+	background-repeat:no-repeat;
+	width:95px;
+	height:17px;
+	padding:0;
+	list-style:none;
+	clear:both;
+	position:relative;
+}
+/* add these classes to the ul to effect the change to the correct number of stars */
+.sr_as_rating.nostar {background-position:0 0;}
+.sr_as_rating.halfstar {background-position:0 -17px;}
+.sr_as_rating.onestar {background-position:0 -34px;}
+.sr_as_rating.onehalfstar {background-position:0 -51px;}
+.sr_as_rating.twostar {background-position:0 -68px;}
+.sr_as_rating.twohalfstar {background-position:0 -85px;}
+.sr_as_rating.threestar {background-position:0 -102px;}
+.sr_as_rating.threehalfstar {background-position:0 -119px;}
+.sr_as_rating.fourstar {background-position:0 -136px;}
+.sr_as_rating.fourhalfstar {background-position:0 -153px;}
+.sr_as_rating.fivestar {background-position:0 -170px;}
+ul.sr_as_rating li {
+	cursor: pointer;
+	float:left;
+	margin:0 3px;
+	text-indent:-999em;
+	clear:none !important;
+}
+
+
+/*Rating Parameters*/
+.sr-es-box{background-image: url(../images/rating/rating-blocks-r.png);}
+.sr-us-box{background-image: url(../images/rating/rating-blocks.png);}
+.rating-box {
+	width:130px;
+	height:10px;
+	padding:0;
+	list-style:none;
+	clear:both;
+	background-repeat:no-repeat;
+	margin:0;
+	position:relative;
+}
+/* add these classes to the ul to effect the change to the correct number of stars */
+.nostar-box{background-position:0 0;}
+.onestar-box {background-position:0 -12px;}
+.twostar-box {background-position:0 -24px;}
+.threestar-box {background-position:0 -36px;}
+.fourstar-box {background-position:0 -48px;}
+.fivestar-box {background-position:0 -60px;}
+ul.rating-box li {
+	cursor: pointer;
+	float:left;
+	margin:0 3px;
+	text-indent:-999em;
+	clear:none !important;
+}
+ul.rating-box li a {
+	position:absolute;
+	left:0;
+	top:0;
+	width:24px;
+	height:10px;
+	text-decoration:none;
+	z-index: 200;
+}
+ul.rating-box li.one a {left:0px;}
+ul.rating-box li.two a {left:27px;}
+ul.rating-box li.three a {left:53px;}
+ul.rating-box li.four a {left:79px;}
+ul.rating-box li.five a {left:106px;}
+
+.sr-es-box li a:hover {background-image: url(../images/rating/rating-blocks-r.png);}
+.sr-us-box li a:hover {background-image: url(../images/rating/rating-blocks.png);}
+ul.rating-box li a:hover {
+	z-index:2;
+	width:130px;
+	height:10px;
+	overflow:hidden;
+	left:0;
+}
+ul.rating-box li.one a:hover {background-position:0 -12px;}
+ul.rating-box li.two a:hover {background-position:0 -24px;}
+ul.rating-box li.three a:hover {background-position:0 -36px;}
+ul.rating-box li.four a:hover {background-position:0 -48px;}
+ul.rating-box li.five a:hover {background-position:0 -60px;}
+ul.rating-box li.six a:hover {background-position:0 -72px;}
+ul.rating-box li.seven a:hover {background-position:0 -84px;}
+ul.rating-box li.eight a:hover {background-position:0 -96px;}
+ul.rating-box li.nine a:hover {background-position:0 -108px;}
+ul.rating-box li.ten a:hover {background-position:0 -120px;}
+
+
+/*show rating*/
+.sr-as-box-small{background-image: url(../images/rating/rating-blocks-small-b.png);}
+.sr-es-box-small{background-image: url(../images/rating/rating-blocks-small-r.png);}
+.sr-us-box-small{background-image: url(../images/rating/rating-blocks-small.png);}	
+.sr-rating-box-small {
+	width:63px;
+	height:5px;
+	padding:0;
+	list-style:none;
+	clear:both;
+	background-repeat:no-repeat;
+	margin:3px auto;
+}
+.sr-rating-box-small li {
+	cursor: pointer;
+	float:left;
+	text-indent:-999em;
+	clear:none !important;
+	padding:0px !important;
+	font-size:0px;
+}
+.nostar-small-box {background-position:0 0;}
+.halfstar-small-box {background-position:0 -6px;}
+.onestar-small-box {background-position:0 -12px;}
+.onehalfstar-small-box {background-position:0 -18px;}
+.twostar-small-box {background-position:0 -24px;}
+.twohalfstar-small-box {background-position:0 -30px;}
+.threestar-small-box {background-position:0 -36px;}
+.threehalfstar-small-box {background-position:0 -42px;}
+.fourstar-small-box {background-position:0 -48px;}
+.fourhalfstar-small-box {background-position:0 -54px;}
+.fivestar-small-box {background-position:0 -60px;}
+.fivehalfstar-small-box {background-position:0 -66px;}
+.sixstar-small-box {background-position:0 -72px;}
+.sixsmallstar-small-box {background-position:0 -78px;}
+.sevenstar-small-box {background-position:0 -84px;}
+.sevenhalfstar-small-box {background-position:0 -90px;}
+.eightstar-small-box {background-position:0 -96px;}
+.eighthalfstar-small-box {background-position:0 -102px;}
+.ninestar-small-box {background-position:0 -108px;}
+.ninehalfstar-small-box {background-position:0 -114px;}
+.tenstar-small-box {background-position:0 -120px;}
+
+
+/*stars*/
+.sr_rating_star_big_generic{
+  float: left;
+  display: inline-block;
+  width: 19px;
+  height: 17px;
+  background-repeat: no-repeat;
+  font-size: 1px;
+  cursor: pointer;
+}
+.sr_rating_star_big{
+  background-image: url(../images/rating/star_big_y.png);
+}
+.sr_rating_star_big_half{
+  background-image: url(../images/rating/star_big_half_y.png);
+}
+.sr_rating_star_big_disabled{
+  background-image: url(../images/rating/star_big_disable.png);
+}

@@ -1,0 +1,251 @@
+/* $Id: style_sitereview_print.css 6590 2013-04-01 00:00:00Z SocialEngineAddOns Copyright 2012-2013 BigStep Technologies Pvt. Ltd. $ */
+body{
+	background:#fff;
+}
+div, td {
+	color: #555555;
+	font-size: 10pt;
+	text-align: left;
+}
+* {
+	font-family: tahoma,arial,verdana,sans-serif;
+}
+* {
+	border: 0 solid #EAEAEA;
+	margin: 0;
+	padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+#global_content_simple {
+	width: 100%;
+}
+/*Profile Print CSS*/
+.seaocore_print_page {
+	clear:both;
+	padding:15px;
+}
+.seaocore_print_page * {
+	font-family:Arial, Helvetica, sans-serif;
+}
+.seaocore_print_title {
+	padding:5px;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	overflow:auto;
+}
+.seaocore_print_title span.left {
+	font-size:17px;
+	font-weight:bold;
+	overflow:hidden;
+}
+.seaocore_print_title span.right {
+	float:right;
+	font-size:13px;
+	font-style:italic;
+	font-weight:bold;
+	font-size:17px;
+	margin-left:20px;
+}
+.seaocore_print_photo {
+	margin:0 10px 10px 0;
+	float:left;
+}
+.seaocore_print_photo img{
+	max-width:200px;
+}
+.seaocore_print_details {
+	overflow:hidden;
+}
+.seaocore_print_details h4 {
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding: 0.5em 0;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+}
+.seaocore_print_profile_fields {
+	margin-top: 10px;
+	overflow: hidden;
+}
+.seaocore_print_profile_fields ul {
+	clear:both;
+	padding:0px;
+	margin:0px;
+  list-style: none;
+}
+.seaocore_print_profile_fields ul > li {
+	overflow: hidden;
+}
+.seaocore_print_profile_fields ul > li + li {
+	margin-top: 5px;
+}
+.seaocore_print_profile_fields ul > li > span {
+	display: block;
+	float: left;
+	overflow: hidden;
+	min-width: 150px;
+}
+.seaocore_print_profile_fields ul > li > span + span {
+	display: block;
+	float: none;
+	overflow: hidden;
+	width:auto;
+}
+.seaocore_print_button,
+.seaocore_print_button a{
+	clear:both;
+	margin-top:10px;
+}
+
+/*Wishlist Print CSS*/
+.sr_print_page{
+	padding:30px;
+}
+.sr_print_page_header{
+	padding: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	overflow: auto;
+	margin-bottom:10px;
+}
+.sr_print_page_header span{
+  margin-bottom: 1px;
+	font-size:1.5em;
+	letter-spacing:normal;
+	float:left;
+	font-style:italic;
+}
+.sr_print_page_header #printdiv{
+  float:right;
+	margin-top:5px;
+}
+
+.sr_wishlist_view{
+  overflow:hidden;
+}
+.sr_wishlist_view_title{
+  font-size:17px;
+  font-weight:bold;
+  margin-bottom:5px;
+}
+.sr_wishlist_view_stats{
+  font-size:0.8em;
+  margin-bottom:3px;
+	color:grey;
+}
+
+ul.seaocore_browse_list {
+	clear: both;
+	margin-top:10px;
+}
+ul.seaocore_browse_list > li {
+	border-top-width: 1px;
+	clear: both;
+	overflow: hidden;
+	padding: 10px 10px;
+	margin:0px !important;
+}
+.seaocore_browse_list_photo {
+	float: left;
+	margin-right: 8px;
+	overflow: hidden;
+}
+.seaocore_browse_list_photo img {
+	width: 100px;
+	border: 1px solid #DDDDDD;
+}
+.seaocore_browse_list_options {
+	float: right;
+	overflow: hidden;
+	padding-left: 20px;
+	width: 150px;
+}
+.seaocore_browse_list_options > a {
+	clear: both;
+	display: block;
+	font-size: 0.8em;
+	line-height: inherit !important;
+	margin: 5px;
+	padding-bottom: 2px;
+	padding-top: 2px;
+}
+.seaocore_browse_list_info {
+	overflow: hidden;
+}
+.seaocore_browse_list_info_title {
+	font-weight: bold;
+	overflow: hidden;
+}
+.seaocore_browse_list_info_title h3 {
+	background: none repeat scroll 0 0 transparent;
+	font-weight: bold;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+.seaocore_browse_list_info_title p {
+	font-size: 1.3em;
+	margin: 0 0 5px;
+	overflow: hidden;
+}
+.seaocore_browse_list_info_title .seaocore_title {
+	font-weight: bold;
+	overflow: hidden;
+}
+ul.seaocore_browse_list .seaocore_browse_list_info_title span {
+	float: right;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+ul.seaocore_browse_list span.list_rating_star span {
+	float: left;
+	margin: 2px;
+}
+.seaocore_browse_list_info_date {
+	color: #999999;
+	font-size: 0.8em;
+	margin-top: 3px;
+}
+.seaocore_browse_list_info_blurb {
+	margin-top: 5px;
+}
+.seaocore_pagination {
+	clear: both;
+	margin-top: 10px;
+}
+.seaocore_pagination > div {
+	margin: 0;
+}
+/*Rating Stars*/
+.sr_rating_star_generic{
+  display:inline-block;
+  width:12px;
+  height:12px;
+  background-repeat:no-repeat;
+  font-size:1px;
+  cursor:default;
+}
+.feedback-button {
+	display: none;
+}
+/*.rating_star_y{background-image:url(../images/rating/star_y.png);}
+.rating_star_half_y{ background-image:url(../images/rating/star_half_y.png);}
+.rating_star_r{background-image:url(../images/rating/star_r.png);}
+.rating_star_half_g{background-image:url(../images/rating/star_half_g.png);}
+.rating_star_b{background-image:url(../images/rating/star_b.png);}
+.rating_star_half_b{background-image:url(../images/rating/star_half_b.png);}
+.sr_rating_star_disabled{background-image:url(../images/rating/star_disable.png);}*/
+
+
+/*======================== Responsive css =================================== */
+
+@media only screen and (max-width:600px){
+	/* Print page photo */
+	.seaocore_print_photo {display: table;float: none;margin: 0 auto;}
+	/* Print page details */
+	.seaocore_print_details {width: 100%;}
+	/*listing of content */
+	.seaocore_print_profile_fields ul > li > span{min-width:118px;}		
+}

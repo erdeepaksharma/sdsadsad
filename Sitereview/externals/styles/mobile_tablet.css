@@ -1,0 +1,50 @@
+
+/*Notification Icons*/
+.notification_type_sitereview_editor_assign::before, .sr_icon_editor::before {
+	content: "\f040";
+}
+.notification_type_sitereview_listing_editor::before {
+	content: "\f0ca";
+}
+.notification_type_sitereview_approved_review::before, 
+.notification_type_sitereview_editorreview::before, 
+.notification_type_sitereview_write_review::before {
+	content: "\f040";
+}
+.notification_type_sitereview_wishlist_follow::before {
+	content: "\f004";
+}
+.notification_type_sitereview_wishlist_followers::before {
+	content: "\f004";
+}
+.notification_type_follow_sitereview_wishlist::before {
+	content: "\f058";
+}
+.sr_wishlist_view_about {
+  border-top-style: solid;
+  border-top-width: 1px;
+  padding: 10px 10px 0;
+}
+.jqm_dialog_sitereview-wishlist-message-owner #toValues-wrapper{
+  display: none;
+}
+/*Dashboard Icons*/
+.main-navigation .core_main_sitereview_listtype_1 i.ui-menu-icon::before,
+.main-navigation .core_main_sitereview_listtype_2 i.ui-menu-icon::before,
+.main-navigation .core_main_sitereview_listtype_3 i.ui-menu-icon::before,
+.main-navigation .core_main_sitereview_listtype_4 i.ui-menu-icon::before,
+.main-navigation .core_main_sitereview_listtype_5 i.ui-menu-icon::before,
+.main-navigation .core_main_sitereview_listtype_6 i.ui-menu-icon::before,
+.main-navigation .core_main_sitereview_listtype_7 i.ui-menu-icon::before,
+.main-navigation .core_main_sitereview_listtype_8 i.ui-menu-icon::before,
+.main-navigation .core_main_sitereview_listtype_9 i.ui-menu-icon::before,
+.main-navigation .core_main_sitereview_listtype_10 i.ui-menu-icon::before {
+  content: "\f0ca";
+}
+/*Tabs Icon*/
+.tab_layout_sitereview_editor_profile_reviews_sitereview .tab-icon i::before{
+  content: "\f040";
+}
+.tab_layout_sitereview_profile_sitereview .tab-icon i::before{
+  content: "\f0ca";
+}
